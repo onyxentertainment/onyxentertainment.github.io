@@ -1,0 +1,1009 @@
+a {
+  text-align: center;
+}
+
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat";
+  padding-top: 15px;
+  text-align: center;
+}
+
+h1{
+  font-size:2.2rem;
+}
+
+h2{
+  font-size:1.8rem;
+}
+
+h3{
+  font-size: 1.3rem;
+}
+
+h5 {
+  line-height: 2;
+}
+
+hr {
+  border: 2px solid black;
+  width: 50%;
+}
+
+p {
+  color: #black;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* Containers */
+.container-fluid {
+  padding: 5% 15%;
+}
+
+#photo .container-fluid {
+  padding: 0%
+}
+
+.form-label{
+color: #black;
+font-size: 1.2rem;
+line-height: 2;
+font-weight:bold;
+margin-top:auto;
+margin-bottom:auto;
+}
+
+.form-label-not-checkbox{
+color: #black;
+font-size: 1.2rem;
+line-height: 2;
+font-weight:bold;
+margin-top:10px;
+}
+
+.checkbox-class{
+  margin-top:auto;
+  margin-bottom:auto;
+  margin-right:10px;
+}
+.not-checkbox{
+  width: 100%;
+  border-radius:4px;
+  margin-top:6px;
+  background-color:#DDDDDD;
+  border: 2px solid #ccc;
+  height: 40px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  /* padding: 12px 20px; */
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #DDDDDD;
+  resize: none;
+  margin-top:6px;
+}
+
+/* Home Page */
+.hover-gray:hover {
+  background-color: #2C2C2D;
+  /* background-color: #9CB392; */
+}
+
+.leftside, .rightside {
+  height: 50vh;
+  width: 100%;
+}
+
+@media screen and (min-width:768px) {
+  .leftside, .rightside {
+    height: 100vh;
+  }
+}
+
+.leftside {
+  background: white;
+}
+
+.rightside {
+  background: black;
+}
+
+.title-image {
+  width: 85%;
+  position: absolute;
+  /* right: 10%; */
+}
+
+/* Entertainment Home Page */
+.attribution {
+  font-size: 0.8rem;
+  color: #8f8f8f;
+  text-align:center;
+  margin:auto;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.booking-button {
+  color: black;
+  background-color: #91D18B;
+  /* background-color:#FF69B4; */
+  font-family: 'Montserrat';
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.booking-button:hover {
+  background-color: #587850;
+  color: black;
+}
+
+.card {
+  background-color: #DDDDDD;
+}
+
+.card-body {
+  padding: 0;
+}
+
+.card-img-top {
+  height: 150px;
+  width: 150px;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.dark-gray-section {
+  background-color: #1A1A1A;
+  color: white;
+}
+
+.DJ-bio-emphasized-text {
+  /* color: #587850; */
+  color: #ff8585;
+  /* font-family: 'Indie Flower', cursive; */
+  /* font-family: 'Parisienne', cursive; */
+  font-family: 'Rochester', cursive;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.dj-bio-photo {
+  /* height: 350px; */
+  max-height:350px;
+  max-width:100%;
+  border: 10px solid #DDDDDD;
+  margin: auto;
+}
+
+.DJ-icon {
+  /* width:100%; */
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  background-image: url('https://img.icons8.com/ios-filled/100/1A1A1A/dj.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-position:right; */
+  background-size: 100% auto;
+}
+
+.DJ-icon:hover {
+  background-image: url('https://img.icons8.com/ios-filled/100/587850/dj.png');
+}
+
+.DJ-name {
+  /* font-family: 'Indie Flower', cursive; */
+  font-family: 'Rochester', cursive;
+}
+
+.DJ-video {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-dj {
+  /* width:100%; */
+  /* height: 350px; */
+  text-align: center;
+  background-image: url('../images/dance2.jpg');
+  /* background-image: url('https://raw.githubusercontent.com/oldgoldtechservices/Onyx2/master/images/danceParty.jpg'); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* background-size: 100% auto; */
+  /* padding-top: 25%; */
+  padding-bottom: 25%;
+}
+
+.footer-dj-text {
+  color: #FFFFFF;
+  font-family: "Montserrat";
+  font-weight: bold;
+  /* text-align:center; */
+}
+
+.footer-photobooth {
+  /* width:100%; */
+  /* height: 350px; */
+  text-align: center;
+  background-image: url('../images/photobooth11.JPG');
+  /* background-image: url('https://raw.githubusercontent.com/oldgoldtechservices/Onyx2/master/images/danceParty.jpg'); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* background-size: 100% auto; */
+  /* padding-top: 25%; */
+  padding-bottom: 25%;
+}
+
+.footer-photography{
+  /* width:100%; */
+  /* height: 350px; */
+  text-align: center;
+  background-image: url('../images/photographer47.jpg');
+  /* background-image: url('https://raw.githubusercontent.com/oldgoldtechservices/Onyx2/master/images/danceParty.jpg'); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* background-size: 100% auto; */
+  /* padding-top: 25%; */
+  padding-bottom: 25%;
+}
+
+.footer-photography-text {
+  /* color: #000000; */
+  color: #ff8585;
+  font-family: "Montserrat";
+  font-weight: bold;
+  /* text-align:center; */
+}
+
+.footer-videography{
+  /* width:100%; */
+  /* height: 600px; */
+  text-align: center;
+  background-image: url('../images/photographer47.jpg');
+  /* background-image: url('https://raw.githubusercontent.com/oldgoldtechservices/Onyx2/master/images/danceParty.jpg'); */
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-size: 100% auto; */
+  background-size: cover;
+  /* padding-top: 25%; */
+  padding-bottom: 25%;
+}
+
+.footer-videography-text {
+  /* color: #000000; */
+  color: #ff8585;
+  font-family: "Montserrat";
+  font-weight: bold;
+  /* text-align:center; */
+}
+
+.green-section {
+  /* background-color: #91D18B; */
+  background-color: #587850;
+}
+
+.header-booking-text {
+  color: #91D18B;
+  font-size: 2rem;
+  font-weight:bold;
+  padding-top: 20%;
+  padding-bottom: 2%;
+}
+
+.header-construction {
+  /* width:100%; */
+  /* height: 350px; */
+  text-align: center;
+  background-image: url('../images/underConstruction.png');
+  /* background-image: url('https://raw.githubusercontent.com/oldgoldtechservices/Onyx2/master/images/danceParty.jpg'); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 25%;
+  padding-bottom: 25%;
+}
+
+.header-construction-text {
+  color:#000000;
+  font-size: 2.5rem;
+  font-weight:bold;
+}
+
+.header-dj {
+  /* width:100%; */
+  height: 350px;
+  text-align: center;
+  background-image: url('../images/danceParty.jpg');
+  /* background-image: url('https://raw.githubusercontent.com/oldgoldtechservices/Onyx2/master/images/danceParty.jpg'); */
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-size: 100% auto; */
+  background-size: cover;
+  padding-top: 25%;
+  padding-bottom: 25%;
+}
+
+.header-dj-text {
+  /* color: #91D18B; */
+  color: #ff8585;
+  /* font-family: 'Indie Flower', cursive; */
+  font-family: 'Rochester', cursive;
+  font-size: 3.7rem;
+  font-weight:bold;
+}
+
+.header-photobooth {
+  /* width:100%; */
+  height: 350px;
+  text-align: center;
+  background-image: url('../images/photobooth2.jpg');
+  /* background-image: url('https://raw.githubusercontent.com/oldgoldtechservices/Onyx2/master/images/danceParty.jpg'); */
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-size: 100% auto; */
+  background-size: cover;
+  padding-top: 25%;
+  padding-bottom: 25%;
+}
+
+.header-photobooth-text {
+  /* color: #91D18B; */
+  color: #ff8585;
+  /* font-family: 'Indie Flower', cursive; */
+  font-family: 'Rochester', cursive;
+  font-size: 3.4rem;
+  font-weight:bold;
+}
+
+.header-photography {
+  /* width:100%; */
+  height: 350px;
+  text-align: center;
+  background-image: url('../images/photographer43.jpg');
+  /* background-image: url('https://raw.githubusercontent.com/oldgoldtechservices/Onyx2/master/images/danceParty.jpg'); */
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-size: 100% auto; */
+  background-size: cover;
+  padding-top: 25%;
+  padding-bottom: 25%;
+}
+
+.header-photography-text {
+  /* color: #91D18B; */
+  color: #ff8585;
+  /* font-family: 'Indie Flower', cursive; */
+  /* font-family: 'Parisienne', cursive; */
+  font-family: 'Rochester', cursive;
+  font-size: 3.2rem;
+  font-weight:bold;
+}
+
+.header-videography {
+  /* width:100%; */
+  height: 350px;
+  text-align: center;
+  background-image: url('../images/photographer7.jpg');
+  /* background-image: url('https://raw.githubusercontent.com/oldgoldtechservices/Onyx2/master/images/danceParty.jpg'); */
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-size: 100% auto; */
+  background-size: cover;
+  padding-top: 25%;
+  padding-bottom: 25%;
+}
+
+.header-videography-text {
+  /* color: #91D18B; */
+  color: #ff8585;
+  /* font-family: 'Indie Flower', cursive; */
+  /* font-family: 'Parisienne', cursive; */
+  font-family: 'Rochester', cursive;
+  font-size: 3.2rem;
+  font-weight:bold;
+}
+
+.d-flex{
+  display:flex !important;
+  overflow:hidden;
+  width:100%;
+  min-width:100%;
+  max-height:800px;
+}
+
+.dropdown-menu {
+  background: rgba(2, 2, 2, 0.8);
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  /*padding: 4.5%;*/
+  margin-left: 2 rem;
+  margin-right: 2 rem;
+  padding: 2%;
+  text-align: center;
+}
+
+.flex-column {
+  max-width: 520px;
+}
+
+/* .flex-row {
+          max-height : 450px;
+      } */
+.footer-heading {
+  color: #8f8f8f;
+  font-weight: bold;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.footer-image {
+  height: 7rem;
+}
+
+.gray-section {
+  background-color: #DDDDDD;
+  color: black;
+}
+
+.hair-icon {
+  /* width:100%; */
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  background-image: url('https://img.icons8.com/ios-filled/100/1A1A1A/hair-brush.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+}
+
+.hair-icon:hover {
+  background-image: url('https://img.icons8.com/ios-filled/100/587850/hair-brush.png');
+  /* background-image: url('https://img.icons8.com/ios-filled/100/91D18B/hair-brush.png'); */
+}
+
+.header-entertainment {
+  /* width:100%; */
+  height: 350px;
+  text-align: center;
+/*   background-image: url('../images/OEwhitebackground.png'); */
+  background-image: url('https://raw.githubusercontent.com/oldgoldtechservices/Onyx2/master/images/OEwhiteBackground.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  /* background-size: cover; */
+}
+
+.image-85 {
+  border: 10px solid white;
+  height: 500px;
+}
+
+.image-gray-border {
+  border: 10px solid #DDDDDD;
+  /* height:20rem; */
+  max-width: 70%;
+  height: auto;
+}
+
+.image-white-border {
+  border: 10px solid white;
+  /* height:20rem; */
+  max-width: 90%;
+  height: auto;
+}
+
+.img-fluid {
+  /* max-height:420px; */
+  margin: 10px;
+  /* width:auto; */
+}
+
+.lighting-icon {
+  /* width:100%; */
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  background-image: url('https://img.icons8.com/ios-filled/100/1A1A1A/source-four-par.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+}
+
+.lighting-icon:hover {
+  background-image: url('https://img.icons8.com/ios-filled/100/587850/source-four-par.png');
+}
+
+.photo-class {
+  max-height: 800px;
+  width: auto;
+  max-width: 100%;
+  padding: 8px;
+}
+
+.photography-class {
+  max-height: 800px;
+  width: auto;
+  max-width: 100%;
+  padding: 8px;
+  object-fit: cover;
+  align-self: start;
+}
+
+.sixty-five{
+	width: 65%;
+}
+
+.thirty-five{
+	width: 35%;
+}
+
+.crop-to-fit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.crop-to-fit img {
+  flex-shrink:0;
+  min-width:100%;
+  min-height:100%
+}
+
+.photography-class-single-photo {
+  height:100%;
+  width:100%;
+  padding:8px;
+  object-fit:cover;
+}
+
+.row-test{
+  display:flex;
+  width:478px;
+}
+
+.thirty-percent{
+  width:30%;
+}
+
+.seventy-percent{
+  width:70%;
+}
+
+.test-pic{
+  object-fit:cover;
+  padding:8px;
+  width:100%;
+}
+
+.package-card{
+  width:100%;
+}
+
+.card-photo {
+  /* max-height:180px; */
+  height:100%;
+  width:100%;
+  padding:8px;
+}
+
+.photobooth-icon {
+  /* width:100%; */
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  background-image: url('https://img.icons8.com/ios-filled/100/1A1A1A/selfie-booth.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+}
+
+.photobooth-icon:hover {
+  background-image: url('https://img.icons8.com/ios-filled/100/587850/selfie-booth.png');
+}
+
+.photobooth-img {
+  /* height: 400px; */
+  height: 10%;
+}
+
+.photographer-bio-photo {
+  height: 350px;
+  border: 10px solid #ffffff;
+  margin: auto;
+}
+
+.videographer-bio-photo {
+  height: 350px;
+  border: 10px solid #DDDDDD;
+  margin: auto;
+}
+
+.photography-icon {
+  /* width:100%; */
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  background-image: url('https://img.icons8.com/pastel-glyph/100/1A1A1A/compact-camera.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+}
+
+.photography-icon:hover {
+  background-image: url('https://img.icons8.com/pastel-glyph/100/587850/compact-camera.png');
+}
+
+.photography-list{
+  font-size: 1.2rem;
+  text-align: left;
+  list-style: none; /*remove default bullets*/
+}
+
+.photography-list-element{
+  padding-bottom:3%;
+  /* color: #587850; */
+}
+
+.photography-list-element::before {
+  /* content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  content: "\27A4"; /*CSS code/unicode for an arrow*/
+  /* color: #91D18B; */
+  color: #587850;
+  font-size: 1.5rem;
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.price-text {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  padding-left:3%;
+  padding-right:3%;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+  text-align:center;
+}
+
+.services-icon:hover {
+  color: white;
+}
+
+.star {
+  color: #1A1A1A;
+}
+
+.text-link {
+  color: #9CB392;
+  font-weight: bold;
+}
+
+.text-link-construction{
+  color: #587850;
+  font-weight: bold;
+}
+
+.top-spacing {
+  padding-top: 40px;
+}
+
+.videography-icon {
+  /* width:100%; */
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  background-image: url('https://img.icons8.com/ios-filled/100/1A1A1A/camcorder-pro.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+}
+
+.videography-icon:hover {
+  background-image: url('https://img.icons8.com/ios-filled/100/587850/camcorder-pro.png');
+}
+
+.wedding-image {
+  /* width: 85%; */
+  border: 10px solid #DDDDDD;
+  height: 200px;
+  width: 300px;
+  /* padding:5px; */
+  /* position: absolute; */
+}
+
+.yard-games-icon {
+  /* width:100%; */
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  background-image: url('https://img.icons8.com/ios-filled/100/1A1A1A/bocce.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+}
+
+.yard-games-icon:hover {
+  background-image: url('https://img.icons8.com/ios-filled/100/587850/bocce.png');
+}
+
+/* Recording Studio Home Page */
+/* header/navigation bar*/
+.header {
+  /* width:100%; */
+  height: 350px;
+  text-align: center;
+  background-image: url('../images/ORwhitebackground.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+}
+
+/* .nav-item {
+  font-size: 30px;
+} */
+
+.service-link{
+  font-size: 24px;
+}
+
+.menu-text-large{
+  font-size:30px;
+}
+
+/* .nav-link {
+  font-size: 30px;
+} */
+
+.navbar {
+  background: rgba(2, 2, 2, 0.8);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}
+
+.navbar-toggler-icon {
+  font-size: 40px;
+}
+
+.derek-studio-photo {
+  height: 350px;
+  text-align: center;
+  background-image: url('../images/recordingStudioHomePhoto.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+}
+
+.card.bg-light {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centered {
+  margin: 0 auto 0 auto;
+}
+
+.paragraph-padding{
+  padding-left:2%;
+  padding-right:2%;
+}
+
+.colored-section {
+  background-color: #102D43;
+  color: #fff;
+}
+
+.dark-green-underline {
+  width: 35%;
+}
+
+/* Features Section */
+#features {
+  position: relative;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+.green-underline {
+  width: 50%;
+}
+
+.icon {
+  color: #DDDDDD;
+  margin: 20px 10px;
+}
+
+.icon:hover {
+  /* color: #9CB392; */
+  color: #91D18B;
+}
+
+.logo {
+  width: 50%;
+  left: 30%;
+}
+
+/* This class sets the size of the recording studio photo */
+.recording-photo {
+  width: 35%;
+}
+
+.studio-photo {
+  background-image: url('../images/pianoAndRecord.png');
+  /* The image used */
+  background-color: white;
+  /* Used if the image is unavailable */
+  height: 500px;
+  /* You must set a specified height */
+  width: 100% background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+}
+
+.testimonials{
+  width:100%;
+}
+
+@media (max-width: 768px) {
+  .testimonials {
+    height:510px;
+  }
+  .testimonial-text{
+    font-size:1.1rem;
+  }
+}
+
+@media (max-width: 992px) and (min-width:768px) {
+  .testimonials {
+    height:480px;
+  }
+  .testimonial-text{
+    font-size:1.3rem;
+  }
+}
+
+@media (min-width:992px) {
+  .testimonials {
+    height:420px;
+  }
+  .testimonial-text{
+    font-size:1.3rem;
+  }
+}
+
+.testimonial-text {
+  /* font-size: 1.5rem; */
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+#title {
+  background-color: #fff;
+  color: #102D43;
+  text-align: left;
+}
+
+#header .container-fluid {
+  /* padding: 3% 15% 7%; */
+  padding: 3% 0% 3% 0%;
+}
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+}
+
+/*Entertainment Pages*/
+.black-background {
+  background-color: black;
+}
+
+/* attritbution footer */
+.white-section {
+  background-color: white;
+}
+
+.modal-dialog {
+  max-width: 90% !important;
+  width: auto !important;
+  height: 90%;
+  margin: auto;
+  margin-top:5vh;
+}
+
+.modal-content {
+  height: 100%;
+}
+
+.modal-body {
+  height: 90%;
+}
+
+.photo-class-modal {
+  max-width: 100%;
+  max-height: 70vh;
+  margin: auto;
+}
+
+.carousel {
+  display: grid;
+  height: 100%;
+}
+
+.carousel-inner{
+  margin:auto;
+}
+
+.carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23587850' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+} /*this changes the arrow color. fill = '%23 plus hex code of desired color plus ' */
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23587850' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+} /*this changes the arrow color. fill = '%23 plus hex code of desired color plus ' */
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.modal-header .close {
+  font-size: 40px; //bigger
+}
+
+input[type=checkbox] {
+    transform: scale(1.5);
+    vertical-align:middle;
+}
