@@ -486,18 +486,6 @@ textarea {
   /* background-image: url('https://img.icons8.com/ios-filled/100/91D18B/hair-brush.png'); */
 }
 
-.header-entertainment {
-  /* width:100%; */
-  height: 250px;
-  text-align: center;
-/*   background-image: url('../images/OEwhitebackground.png'); */
-  background-image: url('https://raw.githubusercontent.com/oldgoldtechservices/Onyx2/master/images/OEwhiteBackground.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto 150px;
-  /* background-size: cover; */
-}
-
 .image-85 {
   border: 10px solid white;
   height: 500px;
@@ -1025,3 +1013,35 @@ input[type=checkbox] {
   width: 100%;
   height: 100%;
 }
+
+.header-entertainment {
+  text-align: center;
+  background-image: url('https://raw.githubusercontent.com/oldgoldtechservices/Onyx2/master/images/OEwhiteBackground.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* small screen */
+@media (max-width: 768px) {
+  .header-entertainment {
+    height: 250px;
+    background-size: auto 130px;
+  }
+}
+
+/* medium screen */
+@media (max-width: 992px) and (min-width:768px) {
+  .header-entertainment {
+    height: 300px;
+    background-size: auto 180px;
+  }
+}
+
+/* large screen */
+@media (min-width:992px) {
+  .header-entertainment {
+    height: 300px;
+    background-size: auto 200px;
+  }
+}
+
