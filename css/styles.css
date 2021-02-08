@@ -1022,10 +1022,18 @@ input[type=checkbox] {
 }
 
 /* small screen */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .header-entertainment {
     height: 250px;
-    background-size: auto 120px;
+    background-size: auto 110px;
+  }
+}
+
+/* small screen */
+@media (max-width: 768px) and (min-width:500px) {
+  .header-entertainment {
+    height: 250px;
+    background-size: auto 130px;
   }
 }
 
