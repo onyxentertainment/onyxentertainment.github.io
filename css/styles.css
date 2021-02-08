@@ -1025,7 +1025,7 @@ input[type=checkbox] {
 @media (max-width: 768px) {
   .header-entertainment {
     height: 250px;
-    background-size: auto 130px;
+    background-size: auto 120px;
   }
 }
 
