@@ -882,6 +882,9 @@ textarea {
   .testimonial-text{
     font-size:1.1rem;
   }
+  .testimonial-arrow{
+    height:510px;
+  }
 }
 
 @media (max-width: 992px) and (min-width:768px) {
@@ -890,6 +893,9 @@ textarea {
   }
   .testimonial-text{
     font-size:1.3rem;
+  }
+  .testimonial-arrow{
+    height:480px;
   }
 }
 
@@ -900,8 +906,10 @@ textarea {
   .testimonial-text{
     font-size:1.3rem;
   }
+  .testimonial-arrow{
+    height:420px;
+  }
 }
-
 .testimonial-text {
   /* font-size: 1.5rem; */
   line-height: 1.5;
