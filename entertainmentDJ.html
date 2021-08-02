@@ -75,29 +75,34 @@
 
   <!-- first booking button -->
   <section class="white-section" id="bookingButton2">
-    <div class="container-fluid">
-        <div id="testimonial-carousel" class="carousel slide testimonials" data-ride="false" data-interval="false">
-          <div class="carousel-inner container-fluid" role="listbox">
-            <div class="carousel-item active video-container">
-              <iframe class="responsive-iframe" src="Derekthadj-1.m4v" autoplay="false" allowFullScreen></iframe>
-            </div>
-            <div class="carousel-item video-container">
-              <iframe class="responsive-iframe" src="DJpageVideo.mp4" autoplay="false" allowFullScreen></iframe>
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon carousel-control-prev-icon-black" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon carousel-control-next-icon-black" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-
+    <div id="testimonial-carousel" class="carousel slide testimonials" data-ride="false" data-interval="false">
+      <div class="carousel-inner container-fluid" role="listbox">
+        <div class="carousel-item active">
+          <video class="DJ-video" controls loop>
+            <source src="Derekthadj-1.m4v" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </div>
-      <div class="row">
-        <a class="btn btn-lg booking-button centered" href="entertainmentBooking.html">Check Pricing & Availability</a>
+        <div class="carousel-item">
+          <video class="DJ-video" controls loop>
+            <source src="DJpageVideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon carousel-control-prev-icon-black" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon carousel-control-next-icon-black" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+    </div>
+
+    <div class="container-fluid">
+      <a class="btn btn-lg booking-button centered" href="entertainmentBooking.html">Check Pricing & Availability</a>
     </div>
   </section>
 
