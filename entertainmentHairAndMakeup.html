@@ -28,22 +28,55 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</head>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#myModal").modal('show');
+    });
+  </script>
+  </head>
 
-<body>
+  <body>
+
+    <div id="myModal" class="modal fade">
+      <div class="modal-dialog modal-dialog-zip">
+        <div class="modal-content modal-content-zip">
+          <!-- <div class="modal-header modal-header-zip"> -->
+            <!-- <h5 class="modal-title modal-title-zip">Subscribe our Newsletter</h5> -->
+            <!-- <button type="button" class="close close-zip" data-dismiss="modal">&times;</button> -->
+          <!-- </div> -->
+          <div class="modal-body modal-body-zip">
+            <div class="row">
+              <button type="button" class="close close-zip" data-dismiss="modal">&times;</button>
+            </div>
+            <h3>Find Your Nearest Onyx Entertainment Location</h3>
+            <!-- <p>Please enter the zip code of your event to find your nearest Onyx location.</p> -->
+            <form>
+              <div class="form-group">
+                <!-- <input type="text" class="form-control zip-text" placeholder="Zip Code" id="uZip" value=""> -->
+                <a class="btn btn-lg zip-button" href="entertainmentLocations.html">Go</a>
+              </div>
+              <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   <!-- Add Javascript to Project -->
   <script src="index.js" charset="utf-8"></script>
   <!-- Nav Bar -->
 
   <nav class="navbar navbar-expand-xl navbar-dark">
-<!--     <a class="logo" href="entertainmentHome.html"><img class="logo" src="images/OEblackBackground.png" alt="logo"></a> -->
-    <a class="logo" href="index.html"><img class="logo" src="images/OEblackBackground.png" alt="logo"></a>
-
-    <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+    <!--     <a class="logo" href="entertainmentHome.html"><img class="logo" src="images/OEblackBackground.png" alt="logo"></a> -->
+    <div class="logo-div mr-auto">
+      <a href="index.html"><img class="logo-small" src="images/OEblackBackground.png" alt="logo"></a>
+    </div>
+    <button id = "collapseButton3" class="navbar-toggler ml-auto collapse-group-1 collapse" data-toggle="collapse" data-target=".collapse-group-1" aria-expanded="false" aria-controls="collapseButton1 navbarTogglerDemo02 collapseButton2 collapseButton3">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <div class="collapse navbar-collapse collapse-group-1" id="navbarTogglerDemo02">
       <ul class="navbar-nav nav nav-fill w-100">
         <li class="dropdown nav-item">
           <a class="btn dropdown-toggle nav-link menu-text-large" data-toggle="dropdown">SERVICES</a>
@@ -65,21 +98,28 @@
           <a class="nav-link menu-text-large" href="entertainmentBooking.html">CONTACT</a>
         </li>
       </ul>
-
     </div>
+    <!-- <div class="zip-div-small"> -->
+      <!-- <label class="zip-code-label">Find Your Location</label> -->
+      <!-- <input type="text" class="zip-code-text-area" placeholder="Zip Code" name="Zip" id="uZip" value="" /> -->
+      <a class="btn btn-lg location-button right-align collapse show collapse-group-1" id="collapseButton1" href="entertainmentLocations.html"><i class="fas fa-map-marker-alt fa-1x"></i>  Find Location</a>
+
+    <button id = "collapseButton2" class="navbar-toggler collapse-group-1 show" data-toggle="collapse" data-target=".collapse-group-1" aria-expanded="false" aria-controls="collapseButton1 navbarTogglerDemo02 collapseButton2 collapseButton3">
+      <span class="navbar-toggler-icon"></span>
+    </button>
   </nav>
 
-   <!-- banner photo -->
+  <!-- banner photo -->
   <div class="header-hair container-fluid">
-    <h1 class="header-hair-text">Event Hair & Makeup in Nashville</h1>
+    <h1 class="header-hair-text">Event Hair & Makeup</h1>
   </div>
 
   <!-- first booking button -->
-  <section class="white-section">
+  <!-- <section class="white-section"> -->
 
-  <div class="container-fluid">
+  <!-- <div class="container-fluid"> -->
 
-    <div class="row">
+    <!-- <div class="row">
 
         <div class="pricing-column col-sm-6">
           <div class="card bg-light">
@@ -89,9 +129,9 @@
               <a class="btn btn-lg booking-button centered btn-block" href="#photoGallery">View Photo Gallery</a>
             </div>
           </div>
-        </div>
+        </div> -->
 
-        <div class="pricing-column col-sm-6">
+        <!-- <div class="pricing-column col-sm-6">
           <div class="card bg-light">
             <img class="card-photo" src="images/LaurelPhotoCard.JPG" alt="Makeup Artist Photo" />
             <div class="card-body">
@@ -99,7 +139,7 @@
               <a class="btn btn-lg booking-button centered btn-block" href="#bios">Makeup Artist Bios</a>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!-- <div class="pricing-column col-sm-6">
           <div class="card bg-light">
@@ -121,16 +161,19 @@
           </div>
         </div> -->
 
-    </div>
+    <!-- </div> -->
 
-  </div>
+  <!-- </div> -->
 
-  </section>
+  <!-- </section> -->
 
   <!-- Photo Gallery -->
   <section class="white-section top-spacing">
-  <h1 id="photoGallery">MAKEUP PHOTO GALLERY:</h1>
-  <hr />
+    <div class="container-fluid">
+      <h1 id="photoGallery">MAKEUP PHOTO GALLERY:</h1>
+      <hr />
+    </div>
+
 
   <div class="container" id="gallery" data-toggle="modal" data-target="#exampleModal">
     <!-- photo row 1-->
@@ -404,7 +447,7 @@
     </div>
   </div>
   <!-- Makeup Artist Bios -->
-  <section class="gray-section">
+  <!-- <section class="gray-section">
   <div class="container-fluid" id="bios">
     <h1>MAKEUP ARTIST BIOS:</h1>
     <hr />
@@ -420,114 +463,113 @@
     <div class="row top-spacing">
       <a class="btn btn-lg booking-button centered" href="entertainmentBooking.html">Check Pricing & Availability</a>
     </div>
-  </div>
+  </div> -->
+
   <!-- Review overlaid on photo -->
 <div class="footer-photography container-fluid">
   <h4 class="footer-photography-text">"Laurel was fantastic. My makeup was gorgeous and lasted all day! She was fun to work with and very attentive. I would definitely recommend her."<br />-Kami B.</h4>
 </div>
-</section>
-  
-  <!-- Services Section -->
-  <section class="gray-section" id="services">
+<!-- </section> -->
+<!-- Services Section -->
+<section class="gray-section" id="services">
+  <div class="container-fluid">
+
+    <div class="row top-spacing">
+
+      <div class="card col-lg-3 col-sm-6 border-0">
+        <a href="entertainmentDJ.html"><img class="card-img-top centered" src='images/DJiconBlack.png' onmouseover="this.src='images/DJiconGreen.png';" onmouseout="this.src='images/DJiconBlack.png';" /></a>
+        <div class="card-body">
+          <h3 class="card-title">DJ</h3>
+        </div>
+      </div>
+
+      <div class="card col-lg-3 col-sm-6 border-0">
+        <a href="entertainmentPhotography.html"><img class="card-img-top centered" src='images/PhotographyIconBlack.png' onmouseover="this.src='images/PhotographyIconGreen.png';" onmouseout="this.src='images/PhotographyIconBlack.png';" /></a>
+        <div class="card-body">
+          <h3 class="card-title">PHOTOGRAPHY</h3>
+        </div>
+      </div>
+
+      <div class="card col-lg-3 col-sm-6 border-0">
+        <a href="entertainmentVideography.html"><img class="card-img-top centered" src='images/VideographyIconBlack.png' onmouseover="this.src='images/VideographyIconGreen.png';" onmouseout="this.src='images/VideographyIconBlack.png';" /></a>
+        <div class="card-body">
+          <h3 class="card-title">VIDEOGRAPHY</h3>
+        </div>
+      </div>
+
+      <div class="card col-lg-3 col-sm-6 border-0">
+        <a href="entertainmentPhotobooth.html"><img class="card-img-top centered" src='images/PhotoboothIconBlack.png' onmouseover="this.src='images/PhotoboothIconGreen.png';" onmouseout="this.src='images/PhotoboothIconBlack.png';" /></a>
+        <div class="card-body">
+          <h3 class="card-title">PHOTO BOOTH</h3>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="card col-lg-4 col-sm-6 border-0">
+        <a href="entertainmentHairAndMakeup.html"><img class="card-img-top centered" src='images/HairIconBlack.png' onmouseover="this.src='images/HairIconGreen.png';" onmouseout="this.src='images/HairIconBlack.png';" /></a>
+        <div class="card-body">
+          <h3 class="card-title">HAIR & MAKEUP</h3>
+        </div>
+      </div>
+
+      <div class="card col-lg-4 col-sm-6 border-0">
+        <a href="entertainmentLighting.html"><img class="card-img-top centered" src='images/LightingIconBlack.png' onmouseover="this.src='images/LightingIconGreen.png';" onmouseout="this.src='images/LightingIconBlack.png';" /></a>
+        <div class="card-body">
+          <h3 class="card-title">LIGHTING</h3>
+        </div>
+      </div>
+
+      <div class="card col-lg-4 col-sm-12 border-0">
+        <a href="entertainmentYardGames.html"><img class="card-img-top centered" src='images/YardGamesIconBlack.png' onmouseover="this.src='images/YardGamesIconGreen.png';" onmouseout="this.src='images/YardGamesIconBlack.png';" /></a>
+        <div class="card-body">
+          <h3 class="card-title">YARD GAMES</h3>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <h3 class="top-spacing">
+        ONYX Entertainment is the most passionate provider of event and wedding <a class="text-link" href="entertainmentDJ.html">DJ services</a>, <a class="text-link" href="entertainmentPhotography.html">photography</a>, <a class="text-link"
+          href="entertainmentVideography.html">videography</a>, <a class="text-link" href="entertainmentHairAndMakeup.html">hair & make-up</a>, <a class="text-link" href="entertainmentLighting.html">lighting</a>, <a class="text-link"
+          href="entertainmentYardGames.html">yard games</a>, & <a class="text-link" href="entertainmentPhotobooth.html">photo booth rental</a>.
+      </h3>
+    </div>
+    <div class="row top-spacing">
+      <a class="btn btn-lg booking-button centered" href="entertainmentBooking.html">Check Pricing & Availability</a>
+    </div>
+  </div>
+
+
+  <!-- Call to Action -->
+
+  <section class="dark-gray-section" id="socials">
+
     <div class="container-fluid">
-
-      <div class="row top-spacing">
-
-        <div class="card col-lg-3 col-sm-6 border-0">
-          <a href="entertainmentDJ.html"><img class="card-img-top centered" src='images/DJiconBlack.png' onmouseover="this.src='images/DJiconGreen.png';" onmouseout="this.src='images/DJiconBlack.png';" /></a>
-          <div class="card-body">
-            <h3 class="card-title">DJ</h3>
-          </div>
-        </div>
-
-        <div class="card col-lg-3 col-sm-6 border-0">
-          <a href="entertainmentPhotography.html"><img class="card-img-top centered" src='images/PhotographyIconBlack.png' onmouseover="this.src='images/PhotographyIconGreen.png';" onmouseout="this.src='images/PhotographyIconBlack.png';" /></a>
-          <div class="card-body">
-            <h3 class="card-title">PHOTOGRAPHY</h3>
-          </div>
-        </div>
-
-        <div class="card col-lg-3 col-sm-6 border-0">
-          <a href="entertainmentVideography.html"><img class="card-img-top centered" src='images/VideographyIconBlack.png' onmouseover="this.src='images/VideographyIconGreen.png';" onmouseout="this.src='images/VideographyIconBlack.png';" /></a>
-          <div class="card-body">
-            <h3 class="card-title">VIDEOGRAPHY</h3>
-          </div>
-        </div>
-
-        <div class="card col-lg-3 col-sm-6 border-0">
-          <a href="entertainmentPhotobooth.html"><img class="card-img-top centered" src='images/PhotoboothIconBlack.png' onmouseover="this.src='images/PhotoboothIconGreen.png';" onmouseout="this.src='images/PhotoboothIconBlack.png';" /></a>
-          <div class="card-body">
-            <h3 class="card-title">PHOTO BOOTH</h3>
-          </div>
-        </div>
-
-      </div>
-
       <div class="row">
-
-        <div class="card col-lg-4 col-sm-6 border-0">
-          <a href="entertainmentHairAndMakeup.html"><img class="card-img-top centered" src='images/HairIconBlack.png' onmouseover="this.src='images/HairIconGreen.png';" onmouseout="this.src='images/HairIconBlack.png';" /></a>
-          <div class="card-body">
-            <h3 class="card-title">HAIR & MAKEUP</h3>
-          </div>
-        </div>
-
-        <div class="card col-lg-4 col-sm-6 border-0">
-          <a href="entertainmentLighting.html"><img class="card-img-top centered" src='images/LightingIconBlack.png' onmouseover="this.src='images/LightingIconGreen.png';" onmouseout="this.src='images/LightingIconBlack.png';" /></a>
-          <div class="card-body">
-            <h3 class="card-title">LIGHTING</h3>
-          </div>
-        </div>
-
-        <div class="card col-lg-4 col-sm-12 border-0">
-          <a href="entertainmentYardGames.html"><img class="card-img-top centered" src='images/YardGamesIconBlack.png' onmouseover="this.src='images/YardGamesIconGreen.png';" onmouseout="this.src='images/YardGamesIconBlack.png';" /></a>
-          <div class="card-body">
-            <h3 class="card-title">YARD GAMES</h3>
-          </div>
-        </div>
-
+        <img class="footer-image centered" src="images/OEblackBackground.png" alt="ONYX">
       </div>
-
       <div class="row">
-        <h3 class="top-spacing">
-          ONYX Entertainment is Nashville’s most passionate provider of event and wedding <a class="text-link" href="entertainmentDJ.html">DJ services</a>, <a class="text-link" href="entertainmentPhotography.html">photography</a>, <a
-            class="text-link" href="entertainmentVideography.html">videography</a>, <a class="text-link" href="entertainmentHairAndMakeup.html">hair & make-up</a>, <a class="text-link" href="entertainmentLighting.html">lighting</a>, <a
-            class="text-link" href="entertainmentYardGames.html">yard games</a>, & <a class="text-link" href="entertainmentPhotobooth.html">photo booth rental</a>.
-        </h3>
+        <div class="col-lg-4">
+        </div>
+        <div class="col-lg-4">
+          <h3 class="footer-heading">Professionalism & Attention to Detail to bring your vision to life!</h3>
+        </div>
+        <div class="col-lg-4">
+        </div>
       </div>
-      <div class="row top-spacing">
-        <a class="btn btn-lg booking-button centered" href="entertainmentBooking.html">Check Pricing & Availability</a>
-      </div>
+
+      <a href="tel:615-334-0801"><i class="icon fas fa-phone fa-2x"></i></a>
+      <a href="mailto:onyx.entertains@gmail.com"><i class="icon fas fa-envelope fa-2x"></i></a>
+      <a href="https://www.facebook.com/onyxentertains"><i class="icon fab fa-facebook-f fa-2x"></i></a>
+      <a href="https://www.instagram.com/onyxnashville/"><i class="icon fab fa-instagram fa-2x"></i></a>
+      <a href="entertainmentLocations.html"><i class="icon fas fa-map-marker-alt fa-2x"></i></a>
+      <p class="attribution">Services Icons: Icons8 https://icons8.com/ | Social Icons: FontAwesome Icons Copyright © 2018 by Fonticons, Inc. https://fontawesome.com/</p>
     </div>
   </section>
-
-
-    <!-- Call to Action -->
-
-    <section class="dark-gray-section" id="socials">
-
-      <div class="container-fluid">
-        <div class="row">
-          <img class="footer-image centered" src="images/OEblackBackground.png" alt="ONYX">
-        </div>
-        <div class="row">
-          <div class="col-lg-4">
-          </div>
-          <div class="col-lg-4">
-            <h3 class="footer-heading">Professionalism & Attention to Detail to bring your vision to life!</h3>
-          </div>
-          <div class="col-lg-4">
-          </div>
-        </div>
-
-        <a href="tel:615-334-0801"><i class="icon fas fa-phone fa-2x"></i></a>
-        <a href="mailto:onyx.entertains@gmail.com"><i class="icon fas fa-envelope fa-2x"></i></a>
-        <a href="https://www.facebook.com/onyxentertains"><i class="icon fab fa-facebook-f fa-2x"></i></a>
-        <a href="https://www.instagram.com/onyxnashville/"><i class="icon fab fa-instagram fa-2x"></i></a>
-        <p class="attribution">Services Icons: Icons8 https://icons8.com/ | Social Icons: FontAwesome Icons Copyright © 2018 by Fonticons, Inc. https://fontawesome.com/</p>
-      </div>
-    </section>
-
 </body>
 
 </html>
