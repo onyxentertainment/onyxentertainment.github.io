@@ -306,7 +306,7 @@ textarea {
   color: #91D18B;
   font-size: 2rem;
   font-weight:bold;
-  padding-top: 20%;
+  padding-top: 25%;
   padding-bottom: 2%;
 }
 
@@ -1333,8 +1333,8 @@ margin-right:10px;
   font-weight:bold;
 }
 .green-underlined-text{
-/*   color:#91D18B; */
-  color:red;
+  color:#91D18B;
+/*   color:red; */
   text-decoration:underline;
 }
 .image-gray-border-locations {
