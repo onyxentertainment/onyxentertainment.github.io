@@ -1333,7 +1333,8 @@ margin-right:10px;
   font-weight:bold;
 }
 .green-underlined-text{
-  color:#91D18B;
+/*   color:#91D18B; */
+  color:red;
   text-decoration:underline;
 }
 .image-gray-border-locations {
