@@ -28,23 +28,56 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</head>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#myModal").modal('show');
+    });
+  </script>
+  </head>
 
-<body>
+  <body>
+
+    <div id="myModal" class="modal fade">
+      <div class="modal-dialog modal-dialog-zip">
+        <div class="modal-content modal-content-zip">
+          <!-- <div class="modal-header modal-header-zip"> -->
+            <!-- <h5 class="modal-title modal-title-zip">Subscribe our Newsletter</h5> -->
+            <!-- <button type="button" class="close close-zip" data-dismiss="modal">&times;</button> -->
+          <!-- </div> -->
+          <div class="modal-body modal-body-zip">
+            <div class="row">
+              <button type="button" class="close close-zip" data-dismiss="modal">&times;</button>
+            </div>
+            <h3>Find Your Nearest Onyx Entertainment Location</h3>
+            <!-- <p>Please enter the zip code of your event to find your nearest Onyx location.</p> -->
+            <form>
+              <div class="form-group">
+                <!-- <input type="text" class="form-control zip-text" placeholder="Zip Code" id="uZip" value=""> -->
+                <a class="btn btn-lg zip-button" href="entertainmentLocations.html">Go</a>
+              </div>
+              <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   <div class="position-absolute">
   <!-- Add Javascript to Project -->
   <script src="index.js" charset="utf-8"></script>
   <!-- Nav Bar -->
 
   <nav class="navbar navbar-expand-xl navbar-dark">
-<!--     <a class="logo" href="entertainmentHome.html"><img class="logo" src="images/OEblackBackground.png" alt="logo"></a> -->
-    <a class="logo" href="index.html"><img class="logo" src="images/OEblackBackground.png" alt="logo"></a>
-
-    <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+    <!--     <a class="logo" href="entertainmentHome.html"><img class="logo" src="images/OEblackBackground.png" alt="logo"></a> -->
+    <div class="logo-div mr-auto">
+      <a href="index.html"><img class="logo-small" src="images/OEblackBackground.png" alt="logo"></a>
+    </div>
+    <button id = "collapseButton3" class="navbar-toggler ml-auto collapse-group-1 collapse" data-toggle="collapse" data-target=".collapse-group-1" aria-expanded="false" aria-controls="collapseButton1 navbarTogglerDemo02 collapseButton2 collapseButton3">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <div class="collapse navbar-collapse collapse-group-1" id="navbarTogglerDemo02">
       <ul class="navbar-nav nav nav-fill w-100">
         <li class="dropdown nav-item">
           <a class="btn dropdown-toggle nav-link menu-text-large" data-toggle="dropdown">SERVICES</a>
@@ -66,13 +99,20 @@
           <a class="nav-link menu-text-large" href="entertainmentBooking.html">CONTACT</a>
         </li>
       </ul>
-
     </div>
+    <!-- <div class="zip-div-small"> -->
+      <!-- <label class="zip-code-label">Find Your Location</label> -->
+      <!-- <input type="text" class="zip-code-text-area" placeholder="Zip Code" name="Zip" id="uZip" value="" /> -->
+      <a class="btn btn-lg location-button right-align collapse show collapse-group-1" id="collapseButton1" href="entertainmentLocations.html"><i class="fas fa-map-marker-alt fa-1x"></i>  Find Location</a>
+
+    <button id = "collapseButton2" class="navbar-toggler collapse-group-1 show" data-toggle="collapse" data-target=".collapse-group-1" aria-expanded="false" aria-controls="collapseButton1 navbarTogglerDemo02 collapseButton2 collapseButton3">
+      <span class="navbar-toggler-icon"></span>
+    </button>
   </nav>
 
   <!-- big dancing photo -->
   <div class="header-photobooth container-fluid">
-    <h1 class="header-photobooth-text">Photo Booth Nashville Rental</h1>
+    <h1 class="header-photobooth-text">Photo Booth Rental</h1>
   </div>
 
   <!-- first booking button -->
@@ -192,7 +232,7 @@
   <section class="gray-section" id="services">
     <div class="container-fluid">
       <h4 class="bold top-spacing">Can’t I just go the DIY Route and Take Photos on my Smartphone?</h4>
-      <hr />
+      <!-- <hr /> -->
       <P>
         You could… but we don’t recommend that because they will likely never leave the smartphone. Photo Booths offer you and your guests something that is impossible to achieve otherwise: the opportunity to capture a memory and walk away with
         memory in hand. Photo Booths capture a moment in time and bring guests of all ages together. All of your guests, no matter their background, age, or idea of fun, will love their unique experience in the booth.
@@ -201,14 +241,14 @@
       <hr />
       <h4 class="bold top-spacing">Fun Props & More</h4>
       <P>
-        Photo Booth rentals near Nashville offer an assortment of prints, props, backdrops, and digital copies. Gigantic glasses, cheesy signs, and silly hats are just a few examples of the props you and your guests can choose from. Each of our
+        Photo Booth rentals offer an assortment of prints, props, backdrops, and digital copies. Gigantic glasses, cheesy signs, and silly hats are just a few examples of the props you and your guests can choose from. Each of our
         Photobooth packages offers a variety of the perfect props for your event. It’s the best way to get the most out of your experience and keep the memories forever!
       </P>
 
       <hr />
-      <h4 class="bold top-spacing">Photo Booth Rental in Nashville & Southeast Region </h4>
+      <h4 class="bold top-spacing">Photo Booth Rental</h4>
       <P>
-        Onyx Entertainment provides the absolute best photo booth experience in Nashville and the Southeastern region of the U.S. Our team is focused on creating exactly what you imagine your special day to be. We do this by figuring out every detail
+        Onyx Entertainment provides the absolute best photo booth experience. Our team is focused on creating exactly what you imagine your special day to be. We do this by figuring out every detail
         of what you want and making sure we accommodate your needs. In addition to customizing your photo booth, we will have an amazing staff member at your event to ensure that everything runs without a hitch. We’ll even create a special scrapbook
         for you to take home after the event so you can look back at all those sweet memories forever. This scrapbook and unlimited prints is the best way to capture some of the best moments of the night.
       </P>
@@ -228,7 +268,7 @@
         you and your guests to create a night you will never forget!
       </p>
       <p>
-        Whether you’re hosting a wedding, a birthday party, or a corporate event, a Nashville event photo booth transforms a normal event into a perfect evening. <a class="text-link" href="entertainmentBooking.html">Contact us</a> today to book your
+        Whether you’re hosting a wedding, a birthday party, or a corporate event, a photo booth transforms a normal event into a perfect evening. <a class="text-link" href="entertainmentBooking.html">Contact us</a> today to book your
         booth!
       </p>
       <div class="row top-spacing">
@@ -237,7 +277,7 @@
     </div>
   </section>
 
-  <!-- big dancing photo -->
+
   <!-- <section class="dark-gray-section"> -->
   <div class="footer-photobooth container-fluid">
     <h4 class="footer-dj-text">"Derek is such a cutie. He arrived on-time, was very fun to work with, and produced great pics!!!"
@@ -308,16 +348,15 @@
 
       <div class="row">
         <h3 class="top-spacing">
-          ONYX Entertainment is Nashville’s most passionate provider of event and wedding <a class="text-link" href="entertainmentDJ.html">DJ services</a>, <a class="text-link" href="entertainmentPhotography.html">photography</a>, <a
-            class="text-link" href="entertainmentVideography.html">videography</a>, <a class="text-link" href="entertainmentHairAndMakeup.html">hair & make-up</a>, <a class="text-link" href="entertainmentLighting.html">lighting</a>, <a
-            class="text-link" href="entertainmentYardGames.html">yard games</a>, & <a class="text-link" href="entertainmentPhotobooth.html">photo booth rental</a>.
+          ONYX Entertainment is the most passionate provider of event and wedding <a class="text-link" href="entertainmentDJ.html">DJ services</a>, <a class="text-link" href="entertainmentPhotography.html">photography</a>, <a class="text-link"
+            href="entertainmentVideography.html">videography</a>, <a class="text-link" href="entertainmentHairAndMakeup.html">hair & make-up</a>, <a class="text-link" href="entertainmentLighting.html">lighting</a>, <a class="text-link"
+            href="entertainmentYardGames.html">yard games</a>, & <a class="text-link" href="entertainmentPhotobooth.html">photo booth rental</a>.
         </h3>
       </div>
       <div class="row top-spacing">
         <a class="btn btn-lg booking-button centered" href="entertainmentBooking.html">Check Pricing & Availability</a>
       </div>
     </div>
-    </section>
 
 
     <!-- Call to Action -->
@@ -342,6 +381,7 @@
         <a href="mailto:onyx.entertains@gmail.com"><i class="icon fas fa-envelope fa-2x"></i></a>
         <a href="https://www.facebook.com/onyxentertains"><i class="icon fab fa-facebook-f fa-2x"></i></a>
         <a href="https://www.instagram.com/onyxnashville/"><i class="icon fab fa-instagram fa-2x"></i></a>
+        <a href="entertainmentLocations.html"><i class="icon fas fa-map-marker-alt fa-2x"></i></a>
         <p class="attribution">Services Icons: Icons8 https://icons8.com/ | Social Icons: FontAwesome Icons Copyright © 2018 by Fonticons, Inc. https://fontawesome.com/</p>
       </div>
     </section>
