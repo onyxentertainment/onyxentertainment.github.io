@@ -28,23 +28,56 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</head>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#myModal").modal('show');
+    });
+  </script>
+  </head>
 
-<body>
+  <body>
+
+    <div id="myModal" class="modal fade">
+      <div class="modal-dialog modal-dialog-zip">
+        <div class="modal-content modal-content-zip">
+          <!-- <div class="modal-header modal-header-zip"> -->
+            <!-- <h5 class="modal-title modal-title-zip">Subscribe our Newsletter</h5> -->
+            <!-- <button type="button" class="close close-zip" data-dismiss="modal">&times;</button> -->
+          <!-- </div> -->
+          <div class="modal-body modal-body-zip">
+            <div class="row">
+              <button type="button" class="close close-zip" data-dismiss="modal">&times;</button>
+            </div>
+            <h3>Find Your Nearest Onyx Entertainment Location</h3>
+            <!-- <p>Please enter the zip code of your event to find your nearest Onyx location.</p> -->
+            <form>
+              <div class="form-group">
+                <!-- <input type="text" class="form-control zip-text" placeholder="Zip Code" id="uZip" value=""> -->
+                <a class="btn btn-lg zip-button" href="entertainmentLocations.html">Go</a>
+              </div>
+              <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   <div class="position-absolute">
     <!-- Add Javascript to Project -->
     <script src="index.js" charset="utf-8"></script>
     <!-- Nav Bar -->
 
     <nav class="navbar navbar-expand-xl navbar-dark">
-<!--       <a class="logo" href="entertainmentHome.html"><img class="logo" src="images/OEblackBackground.png" alt="logo"></a> -->
-      <a class="logo" href="index.html"><img class="logo" src="images/OEblackBackground.png" alt="logo"></a>
-
-      <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+      <!--     <a class="logo" href="entertainmentHome.html"><img class="logo" src="images/OEblackBackground.png" alt="logo"></a> -->
+      <div class="logo-div mr-auto">
+        <a href="index.html"><img class="logo-small" src="images/OEblackBackground.png" alt="logo"></a>
+      </div>
+      <button id = "collapseButton3" class="navbar-toggler ml-auto collapse-group-1 collapse" data-toggle="collapse" data-target=".collapse-group-1" aria-expanded="false" aria-controls="collapseButton1 navbarTogglerDemo02 collapseButton2 collapseButton3">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <div class="collapse navbar-collapse collapse-group-1" id="navbarTogglerDemo02">
         <ul class="navbar-nav nav nav-fill w-100">
           <li class="dropdown nav-item">
             <a class="btn dropdown-toggle nav-link menu-text-large" data-toggle="dropdown">SERVICES</a>
@@ -66,13 +99,20 @@
             <a class="nav-link menu-text-large" href="entertainmentBooking.html">CONTACT</a>
           </li>
         </ul>
-
       </div>
+      <!-- <div class="zip-div-small"> -->
+        <!-- <label class="zip-code-label">Find Your Location</label> -->
+        <!-- <input type="text" class="zip-code-text-area" placeholder="Zip Code" name="Zip" id="uZip" value="" /> -->
+        <a class="btn btn-lg location-button right-align collapse show collapse-group-1" id="collapseButton1" href="entertainmentLocations.html"><i class="fas fa-map-marker-alt fa-1x"></i>  Find Location</a>
+
+      <button id = "collapseButton2" class="navbar-toggler collapse-group-1 show" data-toggle="collapse" data-target=".collapse-group-1" aria-expanded="false" aria-controls="collapseButton1 navbarTogglerDemo02 collapseButton2 collapseButton3">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     </nav>
 
     <!-- big dancing photo -->
-    <div class="header-photography container-fluid">
-      <h1 class="header-photography-text">Wedding Photographers in Nashville</h1>
+    <div class="header-photography-vail container-fluid">
+      <h1 class="header-photography-text">Wedding Photographers</h1>
     </div>
 
     <!-- first booking button -->
@@ -92,7 +132,7 @@
             </div>
           </div>
 
-          <div class="pricing-column col-sm-6">
+          <!-- <div class="pricing-column col-sm-6">
             <div class="card bg-light">
               <img class="card-photo" src="images/taylorleighcard.jpg" alt="Photographer Photo" />
               <div class="card-body">
@@ -100,7 +140,7 @@
                 <a class="btn btn-lg booking-button centered btn-block" href="#bios">Photographer Bios</a>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <div class="pricing-column col-sm-6">
             <div class="card bg-light">
@@ -112,7 +152,7 @@
             </div>
           </div>
 
-          <div class="pricing-column col-sm-6">
+          <!-- <div class="pricing-column col-sm-6">
             <div class="card bg-light">
               <img class="card-photo" src="images/OEwhiteBackgroundCard.png" alt="Photographer Photo" />
               <div class="card-body">
@@ -120,7 +160,7 @@
                 <a class="btn btn-lg booking-button centered btn-block" href="entertainmentBooking.html">Request Info</a>
               </div>
             </div>
-          </div>
+          </div> -->
 
       </div>
 
@@ -132,13 +172,16 @@
     <div class="container-fluid">
         <div class="row">
           <p class="top-spacing">
-            You only have one opportunity to capture the magic of your big day, make sure you don’t miss it! Onyx Entertainment, located in Nashville, Tennessee, has incredible photographers to capture your special occasion here in Nashville, or
-            anywhere in the world! We have event consultants waiting to chat with you about your next event and connect you with our best Tennessee Wedding photography professionals for your needs. Being <em><b>personable, professional, and prompt</b></em> are just a
-            few of the qualities our photographers promise to bring to your wedding. We capture all the moments, whether tender or wild, so you don’t have to! Our Top Wedding Photographers in Nashville are fun-loving individuals who will make you feel
+            You only have one opportunity to capture the magic of your big day, make sure you don’t miss it! Onyx Entertainment has incredible photographers to capture your special occasion
+            anywhere in the world! We have event consultants waiting to chat with you about your next event and connect you with our best Wedding photography professionals for your needs. Being <em><b>personable, professional, and prompt</b></em> are just a
+            few of the qualities our photographers promise to bring to your wedding. We capture all the moments, whether tender or wild, so you don’t have to! Our Top Wedding Photographers are fun-loving individuals who will make you feel
           </p>
           <h1 class="DJ-bio-emphasized-text centered">
             comfortable and at home on your special day.
           </h1>
+        </div>
+        <div class="row top-spacing">
+          <a class="btn btn-lg booking-button centered" href="entertainmentBooking.html">Check Pricing & Availability</a>
         </div>
     </div>
 	</section>
@@ -151,31 +194,40 @@
     <div class="container" id="gallery" data-toggle="modal" data-target="#exampleModal">
       <!-- photo row 1-->
       <div class="d-flex hover-shadow" data-target=”#carouselExample”>
-        <img class="photography-class-single-photo" src="images/photographer2.jpg" onclick="openModal();currentSlide(1)" alt="Photo Booth" />
+        <img class="photography-class-single-photo" src="images/photographer43.jpg" onclick="openModal();currentSlide(1)" alt="Photo Booth" />
+      </div>
+
+      <div class="d-flex" data-target=”#carouselExample”>
+        <div class="d-inline-flex crop-to-fit hover-shadow">
+          <img class="photography-class" src="images/photographer5.jpg" onclick="openModal();currentSlide(2)" alt="Photo Booth" />
+        </div>
+        <div class="d-inline-flex crop-to-fit hover-shadow" data-target=”#carouselExample”>
+          <img class="photography-class" src="images/photographer18.jpg" onclick="openModal();currentSlide(3)" alt="Photo Booth" />
+        </div>
       </div>
 
       <!-- photo row 2 THIS CODE WORKS FOR ANDROID AND WINDOWS, BUT NOT ALL VERSIONS OF MACOS AND IOS-->
       <div class="d-flex">
         <div class="d-inline-flex crop-to-fit hover-shadow" data-target=”#carouselExample”>
-          <img class="photography-class" src="images/photographer4.jpg" onclick="openModal();currentSlide(2)" alt="Photo Booth" />
+          <img class="photography-class" src="images/IMG_4041.JPG" onclick="openModal();currentSlide(4)" alt="Photo Booth" />
         </div>
         <div class="d-inline-flex crop-to-fit crop-to-fit hover-shadow" data-target=”#carouselExample”>
-          <img class="photography-class" src="images/photographer46.jpg" onclick="openModal();currentSlide(3)" alt="Photo Booth" />
+          <img class="photography-class" src="images/IMG_4044.JPG" onclick="openModal();currentSlide(5)" alt="Photo Booth" />
         </div>
       </div>
 
       <!-- photo row 3-->
       <div class="d-flex hover-shadow" data-target=”#carouselExample”>
-        <img class="photography-class-single-photo" src="images/photographer15.jpg" onclick="openModal();currentSlide(4)" alt="Photo Booth" />
+        <img class="photography-class-single-photo" src="images/IMG_4050.JPG" onclick="openModal();currentSlide(6)" alt="Photo Booth" />
       </div>
 
       <!-- photo row 4 THIS CODE WORKS FOR ANDROID AND WINDOWS, BUT NOT ALL VERSIONS OF MACOS AND IOS-->
       <div class="d-flex" data-target=”#carouselExample”>
         <div class="d-inline-flex crop-to-fit hover-shadow">
-          <img class="photography-class" src="images/photographer12.jpg" onclick="openModal();currentSlide(5)" alt="Photo Booth" />
+          <img class="photography-class" src="images/IMG_4039.JPG" onclick="openModal();currentSlide(7)" alt="Photo Booth" />
         </div>
         <div class="d-inline-flex crop-to-fit hover-shadow" data-target=”#carouselExample”>
-          <img class="photography-class" src="images/photographer6.jpg" onclick="openModal();currentSlide(6)" alt="Photo Booth" />
+          <img class="photography-class" src="images/photographer4.jpg" onclick="openModal();currentSlide(8)" alt="Photo Booth" />
         </div>
       </div>
 
@@ -190,31 +242,31 @@
       <div id="rowsfivethrougheight" class="collapse collapse-group-1">
         <!-- photo row 5-->
         <div class="d-flex hover-shadow" data-target=”#carouselExample”>
-          <img class="photography-class-single-photo" src="images/photographer33.jpg" onclick="openModal();currentSlide(7)" alt="Photo Booth" />
+          <img class="photography-class-single-photo" src="images/photographer33.jpg" onclick="openModal();currentSlide(9)" alt="Photo Booth" />
         </div>
 
         <!-- photo row 6 THIS CODE WORKS FOR ANDROID AND WINDOWS, BUT NOT ALL VERSIONS OF MACOS AND IOS-->
         <div class="d-flex" data-target=”#carouselExample”>
           <div class="d-inline-flex crop-to-fit hover-shadow">
-            <img class="photography-class" src="images/photographer31.jpg" onclick="openModal();currentSlide(8)" alt="Photo Booth" />
+            <img class="photography-class" src="images/photographer13.jpg" onclick="openModal();currentSlide(10)" alt="Photo Booth" />
           </div>
           <div class="d-inline-flex crop-to-fit hover-shadow" data-target=”#carouselExample”>
-            <img class="photography-class" src="images/photographer49.jpg" onclick="openModal();currentSlide(9)" alt="Photo Booth" />
+            <img class="photography-class" src="images/photographer36.jpg" onclick="openModal();currentSlide(11)" alt="Photo Booth" />
           </div>
         </div>
 
         <!-- photo row 7-->
         <div class="d-flex hover-shadow" data-target=”#carouselExample”>
-          <img class="photography-class-single-photo" src="images/photographer35.jpg" onclick="openModal();currentSlide(10)" alt="Photo Booth" />
+          <img class="photography-class-single-photo" src="images/IMG_4054.JPG" onclick="openModal();currentSlide(12)" alt="Photo Booth" />
         </div>
 
         <!-- photo row 8 THIS CODE WORKS FOR ANDROID AND WINDOWS, BUT NOT ALL VERSIONS OF MACOS AND IOS-->
         <div class="d-flex" data-target=”#carouselExample”>
           <div class="d-inline-flex crop-to-fit hover-shadow">
-            <img class="photography-class" src="images/photographer13.jpg" onclick="openModal();currentSlide(11)" alt="Photo Booth" />
+            <img class="photography-class" src="images/IMG_4053.JPG" onclick="openModal();currentSlide(13)" alt="Photo Booth" />
           </div>
           <div class="d-inline-flex crop-to-fit hover-shadow" data-target=”#carouselExample”>
-            <img class="photography-class" src="images/photographer36.jpg" onclick="openModal();currentSlide(12)" alt="Photo Booth" />
+            <img class="photography-class" src="images/photographer21.jpg" onclick="openModal();currentSlide(14)" alt="Photo Booth" />
           </div>
         </div>
       </div>
@@ -230,51 +282,60 @@
       <div id="rowsninethroughtwelve" class="collapse collapse-group-2">
         <!-- photo row 9-->
         <div class="d-flex hover-shadow" data-target=”#carouselExample”>
-          <img class="photography-class-single-photo" src="images/photographer34.jpg" onclick="openModal();currentSlide(13)" alt="Photo Booth" />
+          <img class="photography-class-single-photo" src="images/photographer42.jpg" onclick="openModal();currentSlide(15)" alt="Photo Booth" />
         </div>
 
         <!-- photo row 10 THIS CODE WORKS FOR ANDROID AND WINDOWS, BUT NOT ALL VERSIONS OF MACOS AND IOS-->
         <div class="d-flex" data-target=”#carouselExample”>
           <div class="d-inline-flex crop-to-fit hover-shadow">
-            <img class="photography-class" src="images/photographer5.jpg" onclick="openModal();currentSlide(14)" alt="Photo Booth" />
+            <img class="photography-class" src="images/IMG_4048.JPG" onclick="openModal();currentSlide(16)" alt="Photo Booth" />
           </div>
           <div class="d-inline-flex crop-to-fit hover-shadow" data-target=”#carouselExample”>
-            <img class="photography-class" src="images/photographer18.jpg" onclick="openModal();currentSlide(15)" alt="Photo Booth" />
+            <img class="photography-class" src="images/IMG_4049.JPG" onclick="openModal();currentSlide(17)" alt="Photo Booth" />
           </div>
         </div>
 
         <!-- photo row 11-->
         <div class="d-flex hover-shadow" data-target=”#carouselExample”>
-          <img class="photography-class-single-photo" src="images/photographer24.jpg" onclick="openModal();currentSlide(16)" alt="Photo Booth" />
+          <img class="photography-class-single-photo" src="images/IMG_4056.JPG" onclick="openModal();currentSlide(18)" alt="Photo Booth" />
         </div>
 
         <!-- photo row 12 THIS CODE WORKS FOR ANDROID AND WINDOWS, BUT NOT ALL VERSIONS OF MACOS AND IOS-->
         <div class="d-flex" data-target=”#carouselExample”>
           <div class="d-inline-flex crop-to-fit hover-shadow">
-            <img class="photography-class" src="images/photographer48.jpg" onclick="openModal();currentSlide(17)" alt="Photo Booth" />
+            <img class="photography-class" src="images/photographer30.jpg" onclick="openModal();currentSlide(19)" alt="Photo Booth" />
           </div>
           <div class="d-inline-flex crop-to-fit hover-shadow" data-target=”#carouselExample”>
-            <img class="photography-class" src="images/photographer21.jpg" onclick="openModal();currentSlide(18)" alt="Photo Booth" />
+            <img class="photography-class" src="images/photographer50.jpg" onclick="openModal();currentSlide(20)" alt="Photo Booth" />
+          </div>
+          <div class="d-inline-flex crop-to-fit hover-shadow" data-target=”#carouselExample”>
+            <img class="photography-class" src="images/photographer45.jpg" onclick="openModal();currentSlide(21)" alt="Photo Booth" />
           </div>
         </div>
+
+        <!-- photo row 13-->
+        <div class="d-flex hover-shadow" data-target=”#carouselExample”>
+          <img class="photography-class-single-photo" src="images/IMG_4052.JPG" onclick="openModal();currentSlide(22)" alt="Photo Booth" />
+        </div>
+
       </div>
 
     </div>
 
-    <div class="container-fluid collapse collapse-group-2 collapse-group-3" id="collapseButton3">
+    <!-- <div class="container-fluid collapse collapse-group-2 collapse-group-3" id="collapseButton3">
       <button class="btn btn-lg booking-button centered" data-toggle="collapse" data-target=".collapse-group-3" aria-expanded="false" aria-controls="collapseButton3 rowsthirteenthroughfifteen">Show More</button>
     </div>
 
     <div class="container" id="gallery" data-toggle="modal" data-target="#exampleModal">
 
-      <div id="rowsthirteenthroughfifteen" class="collapse collapse-group-3">
+      <div id="rowsthirteenthroughfifteen" class="collapse collapse-group-3"> -->
         <!-- photo row 13-->
-        <div class="d-flex hover-shadow" data-target=”#carouselExample”>
+        <!-- <div class="d-flex hover-shadow" data-target=”#carouselExample”>
           <img class="photography-class-single-photo" src="images/photographer7.jpg" onclick="openModal();currentSlide(19)" alt="Photo Booth" />
-        </div>
+        </div> -->
 
         <!-- photo row 14 THIS CODE WORKS FOR ANDROID AND WINDOWS, BUT NOT ALL VERSIONS OF MACOS AND IOS-->
-        <div class="d-flex" data-target=”#carouselExample”>
+        <!-- <div class="d-flex" data-target=”#carouselExample”>
           <div class="d-inline-flex crop-to-fit hover-shadow">
             <img class="photography-class" src="images/photographer30.jpg" onclick="openModal();currentSlide(20)" alt="Photo Booth" />
           </div>
@@ -284,15 +345,15 @@
           <div class="d-inline-flex crop-to-fit hover-shadow" data-target=”#carouselExample”>
             <img class="photography-class" src="images/photographer45.jpg" onclick="openModal();currentSlide(22)" alt="Photo Booth" />
           </div>
-        </div>
+        </div> -->
 
         <!-- photo row 15-->
-        <div class="d-flex hover-shadow" data-target=”#carouselExample”>
+        <!-- <div class="d-flex hover-shadow" data-target=”#carouselExample”>
           <img class="photography-class-single-photo" src="images/photographer42.jpg" onclick="openModal();currentSlide(23)" alt="Photo Booth" />
         </div>
       </div>
 
-    </div>
+    </div> -->
 
 	</section>
 
@@ -311,43 +372,7 @@
             <div id="carouselExample" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active mySlides">
-                  <img class="photo-class-modal" src="images/photographer2.jpg">
-                </div>
-                <div class="carousel-item mySlides">
-                  <img class="photo-class-modal" src="images/photographer4.jpg">
-                </div>
-                <div class="carousel-item mySlides">
-                  <img class="photo-class-modal" src="images/photographer46.jpg">
-                </div>
-                <div class="carousel-item mySlides">
-                  <img class="photo-class-modal" src="images/photographer15.jpg">
-                </div>
-                <div class="carousel-item mySlides">
-                  <img class="photo-class-modal" src="images/photographer12.jpg">
-                </div>
-                <div class="carousel-item mySlides">
-                  <img class="photo-class-modal" src="images/photographer6.jpg">
-                </div>
-                <div class="carousel-item mySlides">
-                  <img class="photo-class-modal" src="images/photographer33.jpg">
-                </div>
-                <div class="carousel-item mySlides">
-                  <img class="photo-class-modal" src="images/photographer31.jpg">
-                </div>
-                <div class="carousel-item mySlides">
-                  <img class="photo-class-modal" src="images/photographer49.jpg">
-                </div>
-                <div class="carousel-item mySlides">
-                  <img class="photo-class-modal" src="images/photographer35.jpg">
-                </div>
-                <div class="carousel-item mySlides">
-                  <img class="photo-class-modal" src="images/photographer13.jpg">
-                </div>
-                <div class="carousel-item mySlides">
-                  <img class="photo-class-modal" src="images/photographer36.jpg">
-                </div>
-                <div class="carousel-item mySlides">
-                  <img class="photo-class-modal" src="images/photographer34.jpg">
+                  <img class="photo-class-modal" src="images/photographer43.jpg">
                 </div>
                 <div class="carousel-item mySlides">
                   <img class="photo-class-modal" src="images/photographer5.jpg">
@@ -356,16 +381,49 @@
                   <img class="photo-class-modal" src="images/photographer18.jpg">
                 </div>
                 <div class="carousel-item mySlides">
-                  <img class="photo-class-modal" src="images/photographer24.jpg">
+                  <img class="photo-class-modal" src="images/IMG_4041.JPG">
                 </div>
                 <div class="carousel-item mySlides">
-                  <img class="photo-class-modal" src="images/photographer48.jpg">
+                  <img class="photo-class-modal" src="images/IMG_4044.JPG">
+                </div>
+                <div class="carousel-item mySlides">
+                  <img class="photo-class-modal" src="images/IMG_4050.JPG">
+                </div>
+                <div class="carousel-item mySlides">
+                  <img class="photo-class-modal" src="images/IMG_4039.JPG">
+                </div>
+                <div class="carousel-item mySlides">
+                  <img class="photo-class-modal" src="images/photographer4.jpg">
+                </div>
+                <div class="carousel-item mySlides">
+                  <img class="photo-class-modal" src="images/photographer33.jpg">
+                </div>
+                <div class="carousel-item mySlides">
+                  <img class="photo-class-modal" src="images/photographer13.jpg">
+                </div>
+                <div class="carousel-item mySlides">
+                  <img class="photo-class-modal" src="images/photographer36.jpg">
+                </div>
+                <div class="carousel-item mySlides">
+                  <img class="photo-class-modal" src="images/IMG_4054.JPG">
+                </div>
+                <div class="carousel-item mySlides">
+                  <img class="photo-class-modal" src="images/IMG_4053.JPG">
                 </div>
                 <div class="carousel-item mySlides">
                   <img class="photo-class-modal" src="images/photographer21.jpg">
                 </div>
                 <div class="carousel-item mySlides">
-                  <img class="photo-class-modal" src="images/photographer7.jpg">
+                  <img class="photo-class-modal" src="images/photographer42.jpg">
+                </div>
+                <div class="carousel-item mySlides">
+                  <img class="photo-class-modal" src="images/IMG_4048.JPG">
+                </div>
+                <div class="carousel-item mySlides">
+                  <img class="photo-class-modal" src="images/IMG_4049.JPG">
+                </div>
+                <div class="carousel-item mySlides">
+                  <img class="photo-class-modal" src="images/IMG_4056.JPG">
                 </div>
                 <div class="carousel-item mySlides">
                   <img class="photo-class-modal" src="images/photographer30.jpg">
@@ -377,8 +435,11 @@
                   <img class="photo-class-modal" src="images/photographer45.jpg">
                 </div>
                 <div class="carousel-item mySlides">
-                  <img class="photo-class-modal" src="images/photographer42.jpg">
+                  <img class="photo-class-modal" src="images/IMG_4052.JPG">
                 </div>
+                <!-- <div class="carousel-item mySlides">
+                  <img class="photo-class-modal" src="images/">
+                </div> -->
               </div>
 
               <a class="carousel-control-prev" onclick="plusSlides(-1)">
@@ -419,7 +480,7 @@
           Various photo print and album options to make sure you can enjoy your photos daily
         </li>
       </ul>
-      <P>Our Wedding Photography in Nashville is here to help make sure that your event memories are preserved for years to come. While event and wedding photography are a key part of our services, we also can offer you help in planning your
+      <P>Our Wedding Photography Team is here to help make sure that your event memories are preserved for years to come. While event and wedding photography are a key part of our services, we also can offer you help in planning your
         <a class="text-link" href="entertainmentVideography.html">Videography</a>, <a class="text-link" href="entertainmentDJ.html">DJ</a>, and <a class="text-link" href="entertainmentPhotobooth.html">Photo Booth</a> options as well. We want to take the stress out of wedding planning and help you experience the</P>
       <h1 class="DJ-bio-emphasized-text">wedding of your dreams.</h1>
       <hr />
@@ -432,10 +493,10 @@
     <!-- Photography Packages -->
     <section class="white-section">
     <div class="container-fluid" id="packages">
-      <h1>NASHVILLE WEDDING PHOTOGRAPHY PACKAGES:</h1>
+      <h1>WEDDING PHOTOGRAPHY PACKAGES:</h1>
       <hr />
       <p>
-        Select from one of the popular Nashville Wedding Photography Packages below, or we can customize a package for you.</P>
+        Select from one of the popular Wedding Photography Packages below, or we can customize a package for you.</P>
 
       <div class="row">
           <div class="card bg-light package-card">
@@ -490,7 +551,7 @@
 	</section>
 
     <!-- Photographer Bios -->
-    <section class="gray-section">
+    <!-- <section class="gray-section">
     <div class="container-fluid" id="bios">
       <h1>PHOTOGRAPHER BIOS:</h1>
       <hr />
@@ -508,7 +569,7 @@
       <div class="row top-spacing">
         <a class="btn btn-lg booking-button centered" href="entertainmentBooking.html">Check Pricing & Availability</a>
       </div>
-    </div>
+    </div> -->
 
     <!-- Review overlaid on photo -->
 	<div class="footer-photography container-fluid">
@@ -517,8 +578,8 @@
 	</div>
 	</section>
 
-    <!-- Services Section -->
-    <section class="gray-section" id="services">
+  <!-- Services Section -->
+  <section class="gray-section" id="services">
     <div class="container-fluid">
 
       <div class="row top-spacing">
@@ -580,40 +641,44 @@
 
       <div class="row">
         <h3 class="top-spacing">
-          ONYX Entertainment is Nashville’s most passionate provider of event and wedding <a class="text-link" href="entertainmentDJ.html">DJ services</a>, <a class="text-link" href="entertainmentPhotography.html">photography</a>, <a
-            class="text-link" href="entertainmentVideography.html">videography</a>, <a class="text-link" href="entertainmentHairAndMakeup.html">hair & make-up</a>, <a class="text-link" href="entertainmentLighting.html">lighting</a>, <a
-            class="text-link" href="entertainmentYardGames.html">yard games</a>, & <a class="text-link" href="entertainmentPhotobooth.html">photo booth rental</a>.
+          ONYX Entertainment is the most passionate provider of event and wedding <a class="text-link" href="entertainmentDJ.html">DJ services</a>, <a class="text-link" href="entertainmentPhotography.html">photography</a>, <a class="text-link"
+            href="entertainmentVideography.html">videography</a>, <a class="text-link" href="entertainmentHairAndMakeup.html">hair & make-up</a>, <a class="text-link" href="entertainmentLighting.html">lighting</a>, <a class="text-link"
+            href="entertainmentYardGames.html">yard games</a>, & <a class="text-link" href="entertainmentPhotobooth.html">photo booth rental</a>.
         </h3>
       </div>
       <div class="row top-spacing">
         <a class="btn btn-lg booking-button centered" href="entertainmentBooking.html">Check Pricing & Availability</a>
       </div>
     </div>
-	</section>
+
 
     <!-- Call to Action -->
-	<section class="dark-gray-section" id="socials">
-	<div class="container-fluid">
-	  <div class="row">
-		<img class="footer-image centered" src="images/OEblackBackground.png" alt="ONYX">
-	  </div>
-	  <div class="row">
-		<div class="col-lg-4">
-		</div>
-		<div class="col-lg-4">
-		  <h3 class="footer-heading">Professionalism & Attention to Detail to bring your vision to life!</h3>
-		</div>
-		<div class="col-lg-4">
-		</div>
-	  </div>
 
-	  <a href="tel:615-334-0801"><i class="icon fas fa-phone fa-2x"></i></a>
-	  <a href="mailto:onyx.entertains@gmail.com"><i class="icon fas fa-envelope fa-2x"></i></a>
-	  <a href="https://www.facebook.com/onyxentertains"><i class="icon fab fa-facebook-f fa-2x"></i></a>
-	  <a href="https://www.instagram.com/onyxnashville/"><i class="icon fab fa-instagram fa-2x"></i></a>
-	  <p class="attribution">Services Icons: Icons8 https://icons8.com/ | Social Icons: FontAwesome Icons Copyright © 2018 by Fonticons, Inc. https://fontawesome.com/</p>
-    </div>
-	</section>
+    <section class="dark-gray-section" id="socials">
+
+      <div class="container-fluid">
+        <div class="row">
+          <img class="footer-image centered" src="images/OEblackBackground.png" alt="ONYX">
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+          </div>
+          <div class="col-lg-4">
+            <h3 class="footer-heading">Professionalism & Attention to Detail to bring your vision to life!</h3>
+          </div>
+          <div class="col-lg-4">
+          </div>
+        </div>
+
+        <a href="tel:615-334-0801"><i class="icon fas fa-phone fa-2x"></i></a>
+        <a href="mailto:onyx.entertains@gmail.com"><i class="icon fas fa-envelope fa-2x"></i></a>
+        <a href="https://www.facebook.com/onyxentertains"><i class="icon fab fa-facebook-f fa-2x"></i></a>
+        <a href="https://www.instagram.com/onyxnashville/"><i class="icon fab fa-instagram fa-2x"></i></a>
+        <a href="entertainmentLocations.html"><i class="icon fas fa-map-marker-alt fa-2x"></i></a>
+        <p class="attribution">Services Icons: Icons8 https://icons8.com/ | Social Icons: FontAwesome Icons Copyright © 2018 by Fonticons, Inc. https://fontawesome.com/</p>
+      </div>
+    </section>
+
 
  </div>
 </body>
