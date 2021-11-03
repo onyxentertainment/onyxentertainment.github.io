@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+  <meta charset="utf-8">
+  <title>Onyx Photo Booths</title>
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Rochester&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Font Awesome -->
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script> -->
+  <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/v4-shims.js"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="position-absolute">
+  <!-- Add Javascript to Project -->
+  <script src="index.js" charset="utf-8"></script>
+  <!-- Nav Bar -->
+
+  <nav class="navbar navbar-expand-xl navbar-dark">
+<!--     <a class="logo" href="entertainmentHome.html"><img class="logo" src="images/OEblackBackground.png" alt="logo"></a> -->
+    <a class="logo" href="entertainmentHomeNashville.html"><img class="logo" src="images/OEblackBackground.png" alt="logo"></a>
+
+    <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav nav nav-fill w-100">
+        <li class="dropdown nav-item">
+          <a class="btn dropdown-toggle nav-link menu-text-large" data-toggle="dropdown">SERVICES</a>
+          <ul class="dropdown-menu w-100">
+            <li class="nav-item"><a class="nav-link service-link" href="entertainmentDJNashville.html">DJ</a></li>
+            <li class="nav-item"><a class="nav-link service-link" href="entertainmentPhotographyNashville.html">PHOTOGRAPHY</a></li>
+            <li class="nav-item"><a class="nav-link service-link" href="entertainmentVideographyNashville.html">VIDEOGRAPHY</a></li>
+            <li class="nav-item"><a class="nav-link service-link" href="entertainmentPhotoboothNashville.html">PHOTO BOOTH</a></li>
+            <li class="nav-item"><a class="nav-link service-link" href="entertainmentHairAndMakeupNashville.html">HAIR & MAKEUP</a></li>
+            <li class="nav-item"><a class="nav-link service-link" href="entertainmentLightingNashville.html">LIGHTING</a></li>
+            <li class="nav-item"><a class="nav-link service-link" href="entertainmentYardGamesNashville.html">YARD GAMES</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <!--           <a class="nav-link" href="entertainmentHome.html#reviews">REVIEWS</a> -->
+          <a class="nav-link menu-text-large" href="entertainmentHomeNashville.html#reviews">REVIEWS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link menu-text-large" href="entertainmentBooking.html">CONTACT</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <!-- big dancing photo -->
+  <div class="header-photobooth container-fluid">
+    <h1 class="header-photobooth-text">Photo Booth Nashville Rental</h1>
+  </div>
+
+  <!-- first booking button -->
+  <section class="white-section" id="bookingButton2">
+    <div class="container-fluid">
+      <div class="row">
+        <a class="btn btn-lg booking-button centered" href="entertainmentBooking.html">Check Pricing & Availability</a>
+      </div>
+      <div class="row">
+        <p class="top-spacing">
+          Want unlimited prints of you and your sweetheart, children, family, or friends with goofy props and a crystal clear photo resolution? Our photo booth is the perfect extra touch to remembering your special event forever! This is guaranteed
+          to be the most fun, silly, and memorable way to celebrate any wedding or event.
+        </p>
+      </div>
+    </div>
+    <!-- Photo Gallery -->
+    <div class="container" id="gallery" data-toggle="modal" data-target="#exampleModal">
+
+      <!-- photo row -->
+      <div class="d-flex">
+        <div class="d-inline-flex crop-to-fit hover-shadow" data-target=”#carouselExample”>
+          <img class="photography-class" src="images/photobooth8.JPG" onclick="openModal();currentSlide(1)" alt="Photo Booth" />
+          <!-- <img onclick="openModal();currentSlide(1)" class="photo-class" src="images/photobooth8.JPG" alt="Photo Booth" /> -->
+        </div>
+        <div class="d-inline-flex crop-to-fit hover-shadow" data-target=”#carouselExample”>
+          <img class="photography-class" src="images/photobooth5.jpg" onclick="openModal();currentSlide(2)" alt="Photo Booth" />
+          <!-- <img onclick="openModal();currentSlide(2)" class="photo-class" src="images/photobooth5.jpg" alt="Photo Booth" /> -->
+        </div>
+      </div>
+
+      <!-- photo row -->
+      <div class="d-flex">
+        <div class="d-inline-flex crop-to-fit hover-shadow" data-target=”#carouselExample”>
+          <img class="photography-class" src="images/photobooth6.jpg" onclick="openModal();currentSlide(3)" alt="Photo Booth" />
+          <!-- <img onclick="openModal();currentSlide(3)" class="photo-class" src="images/photobooth6.JPG" alt="Photo Booth" /> -->
+        </div>
+        <div class="d-inline-flex crop-to-fit hover-shadow" data-target=”#carouselExample”>
+          <img class="photography-class" src="images/photobooth7.jpg" onclick="openModal();currentSlide(4)" alt="Photo Booth" />
+          <!-- <img onclick="openModal();currentSlide(4)" class="photo-class" src="images/photobooth7.jpg" alt="Photo Booth" /> -->
+        </div>
+      </div>
+
+      <!-- photo row -->
+      <div class="d-flex hover-shadow" data-target=”#carouselExample”>
+<!--         <div class="d-inline-flex" data-target=”#carouselExample”> -->
+          <img class="photography-class-single-photo" src="images/photobooth3.jpg" onclick="openModal();currentSlide(5)" alt="Photo Booth" />
+          <!-- <img onclick="openModal();currentSlide(5)" class="photo-class" src="images/photobooth3.JPG" alt="Photo Booth" /> -->
+<!--         </div> -->
+      </div>
+
+      <!-- photo row -->
+      <div class="d-flex" data-target=”#carouselExample”>
+        <div class="d-inline-flex crop-to-fit hover-shadow">
+          <img class="photography-class" src="images/photobooth9.JPG" onclick="openModal();currentSlide(6)" alt="Photo Booth" />
+          <!-- <img onclick="openModal();currentSlide(6)" class="photo-class" src="images/photobooth9.JPG" alt="Photo Booth" /> -->
+        </div>
+        <div class="d-inline-flex crop-to-fit hover-shadow" data-target=”#carouselExample”>
+          <img class="photography-class" src="images/photobooth4.jpg" onclick="openModal();currentSlide(7)" alt="Photo Booth" />
+          <!-- <img onclick="openModal();currentSlide(7)" class="photo-class" src="images/photobooth4.jpg" alt="Photo Booth" /> -->
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Carousel markup goes in the modal body -->
+
+            <div id="carouselExample" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active mySlides">
+                  <img class="photo-class-modal" src="images/photobooth8.JPG">
+                </div>
+                <div class="carousel-item mySlides">
+                  <img class="photo-class-modal" src="images/photobooth5.jpg">
+                </div>
+                <div class="carousel-item mySlides">
+                  <img class="photo-class-modal" src="images/photobooth6.jpg">
+                </div>
+                <div class="carousel-item mySlides">
+                  <img class="photo-class-modal" src="images/photobooth7.jpg">
+                </div>
+                <div class="carousel-item mySlides">
+                  <img class="photo-class-modal" src="images/photobooth3.jpg">
+                </div>
+                <div class="carousel-item mySlides">
+                  <img class="photo-class-modal" src="images/photobooth9.JPG">
+                </div>
+                <div class="carousel-item mySlides">
+                  <img class="photo-class-modal" src="images/photobooth4.jpg">
+                </div>
+              </div>
+              <a class="carousel-control-prev" onclick="plusSlides(-1)">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" onclick="plusSlides(1)">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- Services Section -->
+  <section class="gray-section" id="services">
+    <div class="container-fluid">
+      <h4 class="bold top-spacing">Can’t I just go the DIY Route and Take Photos on my Smartphone?</h4>
+      <!-- <hr /> -->
+      <P>
+        You could… but we don’t recommend that because they will likely never leave the smartphone. Photo Booths offer you and your guests something that is impossible to achieve otherwise: the opportunity to capture a memory and walk away with
+        memory in hand. Photo Booths capture a moment in time and bring guests of all ages together. All of your guests, no matter their background, age, or idea of fun, will love their unique experience in the booth.
+      </P>
+
+      <hr />
+      <h4 class="bold top-spacing">Fun Props & More</h4>
+      <P>
+        Photo Booth rentals near Nashville offer an assortment of prints, props, backdrops, and digital copies. Gigantic glasses, cheesy signs, and silly hats are just a few examples of the props you and your guests can choose from. Each of our
+        Photobooth packages offers a variety of the perfect props for your event. It’s the best way to get the most out of your experience and keep the memories forever!
+      </P>
+
+      <hr />
+      <h4 class="bold top-spacing">Photo Booth Rental in Nashville & Southeast Region </h4>
+      <P>
+        Onyx Entertainment provides the absolute best photo booth experience in Nashville and the Southeastern region of the U.S. Our team is focused on creating exactly what you imagine your special day to be. We do this by figuring out every detail
+        of what you want and making sure we accommodate your needs. In addition to customizing your photo booth, we will have an amazing staff member at your event to ensure that everything runs without a hitch. We’ll even create a special scrapbook
+        for you to take home after the event so you can look back at all those sweet memories forever. This scrapbook and unlimited prints is the best way to capture some of the best moments of the night.
+      </P>
+    </div>
+
+  </section>
+
+  <!-- Photos above Testimonials -->
+  <section class="white-section">
+    <div class="container-fluid">
+
+      <img class="image-gray-border" src="images/photobooth12.JPG" alt="Photo Booth">
+
+      <p class="top-spacing">
+        An event photo booth takes an event from incredible to unforgettable. Onyx Entertainment will help you design the perfect photo booth experience for your guests. Beyond props and photos, we can also help you find the perfect <a
+          class="text-link" href="entertainmentDJNashville.html">DJ</a>, <a class="text-link" href="entertainmentPhotographyNashville.html">Photographer</a>, <a class="text-link" href="entertainmentVideographyNashville.html">Videographer</a>, and more. Our passion is to serve
+        you and your guests to create a night you will never forget!
+      </p>
+      <p>
+        Whether you’re hosting a wedding, a birthday party, or a corporate event, a Nashville event photo booth transforms a normal event into a perfect evening. <a class="text-link" href="entertainmentBooking.html">Contact us</a> today to book your
+        booth!
+      </p>
+      <div class="row top-spacing">
+        <a class="btn btn-lg booking-button centered" href="entertainmentBooking.html">Request Information</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- big dancing photo -->
+  <!-- <section class="dark-gray-section"> -->
+  <div class="footer-photobooth container-fluid">
+    <h4 class="footer-dj-text">"Derek is such a cutie. He arrived on-time, was very fun to work with, and produced great pics!!!"
+      <br />-Yashica J.</h4>
+  </div>
+  <!-- </section> -->
+
+  <!-- Services Section -->
+  <section class="gray-section" id="services">
+    <div class="container-fluid">
+
+      <div class="row top-spacing">
+
+        <div class="card col-lg-3 col-sm-6 border-0">
+          <a href="entertainmentDJNashville.html"><img class="card-img-top centered" src='images/DJiconBlack.png' onmouseover="this.src='images/DJiconGreen.png';" onmouseout="this.src='images/DJiconBlack.png';" /></a>
+          <div class="card-body">
+            <h3 class="card-title">DJ</h3>
+          </div>
+        </div>
+
+        <div class="card col-lg-3 col-sm-6 border-0">
+          <a href="entertainmentPhotographyNashville.html"><img class="card-img-top centered" src='images/PhotographyIconBlack.png' onmouseover="this.src='images/PhotographyIconGreen.png';" onmouseout="this.src='images/PhotographyIconBlack.png';" /></a>
+          <div class="card-body">
+            <h3 class="card-title">PHOTOGRAPHY</h3>
+          </div>
+        </div>
+
+        <div class="card col-lg-3 col-sm-6 border-0">
+          <a href="entertainmentVideographyNashville.html"><img class="card-img-top centered" src='images/VideographyIconBlack.png' onmouseover="this.src='images/VideographyIconGreen.png';" onmouseout="this.src='images/VideographyIconBlack.png';" /></a>
+          <div class="card-body">
+            <h3 class="card-title">VIDEOGRAPHY</h3>
+          </div>
+        </div>
+
+        <div class="card col-lg-3 col-sm-6 border-0">
+          <a href="entertainmentPhotoboothNashville.html"><img class="card-img-top centered" src='images/PhotoboothIconBlack.png' onmouseover="this.src='images/PhotoboothIconGreen.png';" onmouseout="this.src='images/PhotoboothIconBlack.png';" /></a>
+          <div class="card-body">
+            <h3 class="card-title">PHOTO BOOTH</h3>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="card col-lg-4 col-sm-6 border-0">
+          <a href="entertainmentHairAndMakeupNashville.html"><img class="card-img-top centered" src='images/HairIconBlack.png' onmouseover="this.src='images/HairIconGreen.png';" onmouseout="this.src='images/HairIconBlack.png';" /></a>
+          <div class="card-body">
+            <h3 class="card-title">HAIR & MAKEUP</h3>
+          </div>
+        </div>
+
+        <div class="card col-lg-4 col-sm-6 border-0">
+          <a href="entertainmentLightingNashville.html"><img class="card-img-top centered" src='images/LightingIconBlack.png' onmouseover="this.src='images/LightingIconGreen.png';" onmouseout="this.src='images/LightingIconBlack.png';" /></a>
+          <div class="card-body">
+            <h3 class="card-title">LIGHTING</h3>
+          </div>
+        </div>
+
+        <div class="card col-lg-4 col-sm-12 border-0">
+          <a href="entertainmentYardGamesNashville.html"><img class="card-img-top centered" src='images/YardGamesIconBlack.png' onmouseover="this.src='images/YardGamesIconGreen.png';" onmouseout="this.src='images/YardGamesIconBlack.png';" /></a>
+          <div class="card-body">
+            <h3 class="card-title">YARD GAMES</h3>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <h3 class="top-spacing">
+          ONYX Entertainment is Nashville’s most passionate provider of event and wedding <a class="text-link" href="entertainmentDJNashville.html">DJ services</a>, <a class="text-link" href="entertainmentPhotographyNashville.html">photography</a>, <a
+            class="text-link" href="entertainmentVideographyNashville.html">videography</a>, <a class="text-link" href="entertainmentHairAndMakeupNashville.html">hair & make-up</a>, <a class="text-link" href="entertainmentLightingNashville.html">lighting</a>, <a
+            class="text-link" href="entertainmentYardGamesNashville.html">yard games</a>, & <a class="text-link" href="entertainmentPhotoboothNashville.html">photo booth rental</a>.
+        </h3>
+      </div>
+      <div class="row top-spacing">
+        <a class="btn btn-lg booking-button centered" href="entertainmentBooking.html">Check Pricing & Availability</a>
+      </div>
+    </div>
+    </section>
+
+
+    <!-- Call to Action -->
+
+    <section class="dark-gray-section" id="socials">
+
+      <div class="container-fluid">
+        <div class="row">
+          <img class="footer-image centered" src="images/OEblackBackground.png" alt="ONYX">
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+          </div>
+          <div class="col-lg-4">
+            <h3 class="footer-heading">Professionalism & Attention to Detail to bring your vision to life!</h3>
+          </div>
+          <div class="col-lg-4">
+          </div>
+        </div>
+
+        <a href="tel:615-334-0801"><i class="icon fas fa-phone fa-2x"></i></a>
+        <a href="mailto:onyx.entertains@gmail.com"><i class="icon fas fa-envelope fa-2x"></i></a>
+        <a href="https://www.facebook.com/onyxentertains"><i class="icon fab fa-facebook-f fa-2x"></i></a>
+        <a href="https://www.instagram.com/onyxnashville/"><i class="icon fab fa-instagram fa-2x"></i></a>
+        <a href="entertainmentLocations.html"><i class="icon fas fa-map-marker-alt fa-2x"></i></a>
+        <p class="attribution">Services Icons: Icons8 https://icons8.com/ | Social Icons: FontAwesome Icons Copyright © 2018 by Fonticons, Inc. https://fontawesome.com/</p>
+      </div>
+    </section>
+    </div>
+</body>
+
+</html>
