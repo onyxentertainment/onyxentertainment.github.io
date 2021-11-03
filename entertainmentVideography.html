@@ -28,22 +28,55 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</head>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#myModal").modal('show');
+    });
+  </script>
+  </head>
 
-<body>
+  <body>
+
+    <div id="myModal" class="modal fade">
+      <div class="modal-dialog modal-dialog-zip">
+        <div class="modal-content modal-content-zip">
+          <!-- <div class="modal-header modal-header-zip"> -->
+            <!-- <h5 class="modal-title modal-title-zip">Subscribe our Newsletter</h5> -->
+            <!-- <button type="button" class="close close-zip" data-dismiss="modal">&times;</button> -->
+          <!-- </div> -->
+          <div class="modal-body modal-body-zip">
+            <div class="row">
+              <button type="button" class="close close-zip" data-dismiss="modal">&times;</button>
+            </div>
+            <h3>Find Your Nearest Onyx Entertainment Location</h3>
+            <!-- <p>Please enter the zip code of your event to find your nearest Onyx location.</p> -->
+            <form>
+              <div class="form-group">
+                <!-- <input type="text" class="form-control zip-text" placeholder="Zip Code" id="uZip" value=""> -->
+                <a class="btn btn-lg zip-button" href="entertainmentLocations.html">Go</a>
+              </div>
+              <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   <!-- Add Javascript to Project -->
   <script src="index.js" charset="utf-8"></script>
   <!-- Nav Bar -->
 
   <nav class="navbar navbar-expand-xl navbar-dark">
-<!--     <a class="logo" href="entertainmentHome.html"><img class="logo" src="images/OEblackBackground.png" alt="logo"></a> -->
-    <a class="logo" href="index.html"><img class="logo" src="images/OEblackBackground.png" alt="logo"></a>
-
-    <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+    <!--     <a class="logo" href="entertainmentHome.html"><img class="logo" src="images/OEblackBackground.png" alt="logo"></a> -->
+    <div class="logo-div mr-auto">
+      <a href="index.html"><img class="logo-small" src="images/OEblackBackground.png" alt="logo"></a>
+    </div>
+    <button id = "collapseButton3" class="navbar-toggler ml-auto collapse-group-1 collapse" data-toggle="collapse" data-target=".collapse-group-1" aria-expanded="false" aria-controls="collapseButton1 navbarTogglerDemo02 collapseButton2 collapseButton3">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <div class="collapse navbar-collapse collapse-group-1" id="navbarTogglerDemo02">
       <ul class="navbar-nav nav nav-fill w-100">
         <li class="dropdown nav-item">
           <a class="btn dropdown-toggle nav-link menu-text-large" data-toggle="dropdown">SERVICES</a>
@@ -65,13 +98,20 @@
           <a class="nav-link menu-text-large" href="entertainmentBooking.html">CONTACT</a>
         </li>
       </ul>
-
     </div>
+    <!-- <div class="zip-div-small"> -->
+      <!-- <label class="zip-code-label">Find Your Location</label> -->
+      <!-- <input type="text" class="zip-code-text-area" placeholder="Zip Code" name="Zip" id="uZip" value="" /> -->
+      <a class="btn btn-lg location-button right-align collapse show collapse-group-1" id="collapseButton1" href="entertainmentLocations.html"><i class="fas fa-map-marker-alt fa-1x"></i>  Find Location</a>
+
+    <button id = "collapseButton2" class="navbar-toggler collapse-group-1 show" data-toggle="collapse" data-target=".collapse-group-1" aria-expanded="false" aria-controls="collapseButton1 navbarTogglerDemo02 collapseButton2 collapseButton3">
+      <span class="navbar-toggler-icon"></span>
+    </button>
   </nav>
 
   <!-- big dancing photo -->
   <div class="header-videography container-fluid">
-    <h1 class="header-videography-text">Wedding Videographers in Nashville</h1>
+    <h1 class="header-videography-text">Wedding Videographers</h1>
   </div>
 
   <section class="white-section">
@@ -81,20 +121,10 @@
 
         <div class="pricing-column col-sm-6">
           <div class="card bg-light">
-            <img class="card-photo" src="images/photographer14card.jpg" alt="Photographer Photo" />
+            <img class="card-photo" src="images/photographer14card.jpg" alt="Videographer Photo" />
             <div class="card-body">
               <p class="paragraph-padding">See our videographers' work.</p>
               <a class="btn btn-lg booking-button centered btn-block" href="#video">Watch Videos</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="pricing-column col-sm-6">
-          <div class="card bg-light">
-            <img class="card-photo" src="images/charlesCard.jpg" alt="Photographer Photo" />
-            <div class="card-body">
-              <p class="paragraph-padding">Meet our talented videographers.</p>
-              <a class="btn btn-lg booking-button centered btn-block" href="#bios">Videographer Bios</a>
             </div>
           </div>
         </div>
@@ -109,21 +139,11 @@
           </div>
         </div>
 
-        <div class="pricing-column col-sm-6">
-          <div class="card bg-light">
-            <img class="card-photo" src="images/OEwhiteBackgroundCard.png" alt="Photographer Photo" />
-            <div class="card-body">
-              <p class="paragraph-padding">Contact us about your big day.</p>
-              <a class="btn btn-lg booking-button centered btn-block" href="entertainmentBooking.html">Request Info</a>
-            </div>
-          </div>
-        </div>
-
       </div>
 
       <h1 class="top-spacing" id="video">WEDDING VIDEOS:</h1>
       <hr />
-    </div>
+      </div>
 
       <div id="testimonial-carousel" class="carousel slide testimonials" data-ride="false" data-interval="false">
         <div class="carousel-inner container-fluid" role="listbox">
@@ -145,7 +165,7 @@
 
       </div>
 
-    
+
   </section>
 
   <section class="gray-section">
@@ -153,53 +173,35 @@
       <div class="row">
         <p class="top-spacing">
           Videography is the unique art and craft of visual storytelling to capture your memorable events in a way that nothing else can. These recorded moments become part of your family’s legacy that you will return to again and again. When
-          searching for videography in Nashville for your next special event, consider letting our passionate and gifted Nashville videography team capture your day in cinematic HD video. We consider it a high honor to work alongside you on your big
+          searching for videography for your next special event, consider letting our passionate and gifted videography team capture your day in cinematic HD video. We consider it a high honor to work alongside you on your big
           day and find joy in providing you captured
         </p>
         <h1 class="DJ-bio-emphasized-text centered">
           moments in time that you will have forever.
         </h1>
       </div>
-    </div>
-  </section>
-
-  <!-- Videographer Bios -->
-  <section class="white-section">
-    <div class="container-fluid" id="bios">
-      <h1>VIDEOGRAPHER BIOS:</h1>
-      <hr />
-      <h1 class="DJ-name">Charles</h1>
-      <img class="videographer-bio-photo" src="images/charles.JPG" alt="Charles Videographer Photo">
-      <p class="top-spacing">
-        Charles was born and raised in Murfreesboro, Tennessee. For the past 5 years Charles has been working in the film industry, with three of those being in Los Angeles, California. He has been involved in every aspect of the storytelling
-        process, working with a wide range of clients including Dolby Atmos, Violet Grey, Liam 2004 Films and more. Overall, he has helped produce 20+ productions with budgets ranging from $500 to $100,000+.
-        Charles is a creative and dedicated professional with a passion to serve you with integrity, hard work, and a true love for filmmaking. Charles will do whatever it takes to give you not only a great wedding day video but something that
-        captures the real love and beauty between bride and groom.
-      </p>
-      <h1 class="DJ-bio-emphasized-text">
-        Happy tears included.
-      </h1>
-      <hr />
       <div class="row top-spacing">
         <a class="btn btn-lg booking-button centered" href="entertainmentBooking.html">Check Pricing & Availability</a>
       </div>
     </div>
   </section>
 
+
   <!-- Why Choose Onyx -->
   <section class="gray-section">
+
     <div class="container-fluid">
       <h1>WHY CHOOSE ONYX ENTERTAINMENT:</h1>
       <hr />
-      <p>We strive to deliver joy and laughter for many years to come. Our team of Nashville videography professionals is ready to work with you and provide you the best possible event experience, so you receive the video you love. Here are a few
-        options we have available for your next event that needs videography in Nashville:</p>
+      <p>We strive to deliver joy and laughter for many years to come. Our team of videography professionals is ready to work with you and provide you the best possible event experience, so you receive the video you love. Here are a few
+        options we have available for your next event that needs videography:</p>
       <h2>Highlight Film</h2>
       <p>These are the best moments of your whole event set to music and include vows and toasts. We make sure we capture everything, including the small details, so you remember all the best moments.</p>
       <h2>Optional aerial drone footage</h2>
       <p>With a view from the sky, you can see your event from a whole new perspective. Our videography team is equipped and ready to get you a view that you will love.</p>
       <h2>Optional second videographer</h2>
       <p>While one videographer is good, two is better! As a person can only be in one place at a time, with two people capturing your event, you can be sure that you will never miss a special moment!</p>
-      <p>Onyx Entertainment is here to make planning and building the perfect package Nashville event videography easy. We want to provide you with a stunning event video that keeps your memories alive in beautiful HD video. For the rest of your
+      <p>Onyx Entertainment is here to make planning and building the perfect event videography package easy. We want to provide you with a stunning event video that keeps your memories alive in beautiful HD video. For the rest of your
         event, we’re here to help, too — <a class="text-link" href="entertainmentBooking.html">contact us</a> to learn about our other event planning offerings and get started today.</p>
       <hr />
       <div class="row top-spacing">
@@ -211,7 +213,7 @@
   <!-- Videography Packages -->
   <section class="white-section">
     <div class="container-fluid" id="packages">
-      <h1>NASHVILLE WEDDING VIDEOGRAPHY PACKAGES:</h1>
+      <h1>WEDDING VIDEOGRAPHY PACKAGES:</h1>
       <hr />
       <h2>WEDDING DOCUMENTARY PACKAGES</h2>
       <div class="row">
@@ -343,8 +345,9 @@
 
   <!-- Review overlaid on photo -->
   <div class="footer-videography container-fluid">
-    <h4 class="footer-videography-text">“Charles was amazing!! First of all he got in touch with me prior to the event to make sure we were on the same page!! He took my vision for my wedding video and made it a complete reality! Charles is not only creative and insanely talented but also kind and so easy to work with. He went above and beyond for us, adding audio when we originally didn’t plan on having it. I would 100% recommend Charles for any audio/video needs!”
-<br />- Dana and Jamie</h4>
+    <h4 class="footer-videography-text">“Charles was amazing!! First of all he got in touch with me prior to the event to make sure we were on the same page!! He took my vision for my wedding video and made it a complete reality! Charles is not only
+      creative and insanely talented but also kind and so easy to work with. He went above and beyond for us, adding audio when we originally didn’t plan on having it. I would 100% recommend Charles for any audio/video needs!”
+      <br />- Dana and Jamie</h4>
   </div>
   <!-- </section> -->
 
@@ -411,9 +414,9 @@
 
       <div class="row">
         <h3 class="top-spacing">
-          ONYX Entertainment is Nashville’s most passionate provider of event and wedding <a class="text-link" href="entertainmentDJ.html">DJ services</a>, <a class="text-link" href="entertainmentPhotography.html">photography</a>, <a
-            class="text-link" href="entertainmentVideography.html">videography</a>, <a class="text-link" href="entertainmentHairAndMakeup.html">hair & make-up</a>, <a class="text-link" href="entertainmentLighting.html">lighting</a>, <a
-            class="text-link" href="entertainmentYardGames.html">yard games</a>, & <a class="text-link" href="entertainmentPhotobooth.html">photo booth rental</a>.
+          ONYX Entertainment is the most passionate provider of event and wedding <a class="text-link" href="entertainmentDJ.html">DJ services</a>, <a class="text-link" href="entertainmentPhotography.html">photography</a>, <a class="text-link"
+            href="entertainmentVideography.html">videography</a>, <a class="text-link" href="entertainmentHairAndMakeup.html">hair & make-up</a>, <a class="text-link" href="entertainmentLighting.html">lighting</a>, <a class="text-link"
+            href="entertainmentYardGames.html">yard games</a>, & <a class="text-link" href="entertainmentPhotobooth.html">photo booth rental</a>.
         </h3>
       </div>
       <div class="row top-spacing">
@@ -444,6 +447,7 @@
         <a href="mailto:onyx.entertains@gmail.com"><i class="icon fas fa-envelope fa-2x"></i></a>
         <a href="https://www.facebook.com/onyxentertains"><i class="icon fab fa-facebook-f fa-2x"></i></a>
         <a href="https://www.instagram.com/onyxnashville/"><i class="icon fab fa-instagram fa-2x"></i></a>
+        <a href="entertainmentLocations.html"><i class="icon fas fa-map-marker-alt fa-2x"></i></a>
         <p class="attribution">Services Icons: Icons8 https://icons8.com/ | Social Icons: FontAwesome Icons Copyright © 2018 by Fonticons, Inc. https://fontawesome.com/</p>
       </div>
     </section>
