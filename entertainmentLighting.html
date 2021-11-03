@@ -28,22 +28,55 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</head>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#myModal").modal('show');
+    });
+  </script>
+  </head>
 
-<body>
+  <body>
+
+    <div id="myModal" class="modal fade">
+      <div class="modal-dialog modal-dialog-zip">
+        <div class="modal-content modal-content-zip">
+          <!-- <div class="modal-header modal-header-zip"> -->
+            <!-- <h5 class="modal-title modal-title-zip">Subscribe our Newsletter</h5> -->
+            <!-- <button type="button" class="close close-zip" data-dismiss="modal">&times;</button> -->
+          <!-- </div> -->
+          <div class="modal-body modal-body-zip">
+            <div class="row">
+              <button type="button" class="close close-zip" data-dismiss="modal">&times;</button>
+            </div>
+            <h3>Find Your Nearest Onyx Entertainment Location</h3>
+            <!-- <p>Please enter the zip code of your event to find your nearest Onyx location.</p> -->
+            <form>
+              <div class="form-group">
+                <!-- <input type="text" class="form-control zip-text" placeholder="Zip Code" id="uZip" value=""> -->
+                <a class="btn btn-lg zip-button" href="entertainmentLocations.html">Go</a>
+              </div>
+              <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   <!-- Add Javascript to Project -->
   <script src="index.js" charset="utf-8"></script>
   <!-- Nav Bar -->
 
   <nav class="navbar navbar-expand-xl navbar-dark">
-<!--     <a class="logo" href="entertainmentHome.html"><img class="logo" src="images/OEblackBackground.png" alt="logo"></a> -->
-    <a class="logo" href="index.html"><img class="logo" src="images/OEblackBackground.png" alt="logo"></a>
-
-    <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+    <!--     <a class="logo" href="entertainmentHome.html"><img class="logo" src="images/OEblackBackground.png" alt="logo"></a> -->
+    <div class="logo-div mr-auto">
+      <a href="index.html"><img class="logo-small" src="images/OEblackBackground.png" alt="logo"></a>
+    </div>
+    <button id = "collapseButton3" class="navbar-toggler ml-auto collapse-group-1 collapse" data-toggle="collapse" data-target=".collapse-group-1" aria-expanded="false" aria-controls="collapseButton1 navbarTogglerDemo02 collapseButton2 collapseButton3">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <div class="collapse navbar-collapse collapse-group-1" id="navbarTogglerDemo02">
       <ul class="navbar-nav nav nav-fill w-100">
         <li class="dropdown nav-item">
           <a class="btn dropdown-toggle nav-link menu-text-large" data-toggle="dropdown">SERVICES</a>
@@ -65,8 +98,15 @@
           <a class="nav-link menu-text-large" href="entertainmentBooking.html">CONTACT</a>
         </li>
       </ul>
-
     </div>
+    <!-- <div class="zip-div-small"> -->
+      <!-- <label class="zip-code-label">Find Your Location</label> -->
+      <!-- <input type="text" class="zip-code-text-area" placeholder="Zip Code" name="Zip" id="uZip" value="" /> -->
+      <a class="btn btn-lg location-button right-align collapse show collapse-group-1" id="collapseButton1" href="entertainmentLocations.html"><i class="fas fa-map-marker-alt fa-1x"></i>  Find Location</a>
+
+    <button id = "collapseButton2" class="navbar-toggler collapse-group-1 show" data-toggle="collapse" data-target=".collapse-group-1" aria-expanded="false" aria-controls="collapseButton1 navbarTogglerDemo02 collapseButton2 collapseButton3">
+      <span class="navbar-toggler-icon"></span>
+    </button>
   </nav>
 
   <!-- big dancing photo -->
@@ -139,9 +179,9 @@
 
       <div class="row">
         <h3 class="top-spacing">
-          ONYX Entertainment is Nashville’s most passionate provider of event and wedding <a class="text-link" href="entertainmentDJ.html">DJ services</a>, <a class="text-link" href="entertainmentPhotography.html">photography</a>, <a
-            class="text-link" href="entertainmentVideography.html">videography</a>, <a class="text-link" href="entertainmentHairAndMakeup.html">hair & make-up</a>, <a class="text-link" href="entertainmentLighting.html">lighting</a>, <a
-            class="text-link" href="entertainmentYardGames.html">yard games</a>, & <a class="text-link" href="entertainmentPhotobooth.html">photo booth rental</a>.
+          ONYX Entertainment is the most passionate provider of event and wedding <a class="text-link" href="entertainmentDJ.html">DJ services</a>, <a class="text-link" href="entertainmentPhotography.html">photography</a>, <a class="text-link"
+            href="entertainmentVideography.html">videography</a>, <a class="text-link" href="entertainmentHairAndMakeup.html">hair & make-up</a>, <a class="text-link" href="entertainmentLighting.html">lighting</a>, <a class="text-link"
+            href="entertainmentYardGames.html">yard games</a>, & <a class="text-link" href="entertainmentPhotobooth.html">photo booth rental</a>.
         </h3>
       </div>
       <div class="row top-spacing">
@@ -172,6 +212,7 @@
         <a href="mailto:onyx.entertains@gmail.com"><i class="icon fas fa-envelope fa-2x"></i></a>
         <a href="https://www.facebook.com/onyxentertains"><i class="icon fab fa-facebook-f fa-2x"></i></a>
         <a href="https://www.instagram.com/onyxnashville/"><i class="icon fab fa-instagram fa-2x"></i></a>
+        <a href="entertainmentLocations.html"><i class="icon fas fa-map-marker-alt fa-2x"></i></a>
         <p class="attribution">Services Icons: Icons8 https://icons8.com/ | Social Icons: FontAwesome Icons Copyright © 2018 by Fonticons, Inc. https://fontawesome.com/</p>
       </div>
     </section>
